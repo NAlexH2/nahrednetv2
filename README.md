@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+# nah-red.net
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a final project for CS410 Introduction to Web Development at Portland
+State University.
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+# How to Run
 
-### `npm start`
+Requires nothing on your part! Simply visit [nah-red.net](https://www.nah-red.net/)
+and explore to your hearts desire.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# How is this being deployed? What are you using to make this website?
 
-### `npm test`
+This website is being deployed with [AWS Amplify](https://aws.amazon.com/amplify/faqs/) through GitHub every time a new push has been detected. I wanted to explore managing a website through a more enterprise perspective and felt this was a great choice. With AWS I was also able to establish a personal email through my website that people are able to contact me with. The form on the site also sends me an email to this address when filled out and submitted correctly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Additionally, the website is built using a combination of HTML (with [Bootstrap](https://getbootstrap.com/)), CSS and JavaScript.
 
-### `npm run build`
+Utilizing the `Date` library with JavaScript, a greeting is displayed based on the users location and current time of day. It pulls the users local time and determines (based on 24hr format) if it's before noon, after-noon or the evening (past 4pm).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The contact form is handled by [Formspree](https://formspree.io).
