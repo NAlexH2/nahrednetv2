@@ -9,16 +9,21 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--oceanslate);
-  color: var(--honey);
+  color: var(--toastedalmond);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.NahRedNet {
+  font-family: "Square Peg", cursive;
+  margin-right: 50px;
+  font-size: 50px;
+  text-decoration: var(--honey) underline;
+  color: unset;
 }
