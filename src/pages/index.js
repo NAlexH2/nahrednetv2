@@ -1,14 +1,18 @@
-// import Layout, { siteTitle } from "../components/layout";
-// import utilStyles from "../styles/utils.module.css";
-import Image from "next/image";
-import PageHeader from "./header";
-import styles from "../components/styles.module.css";
+import dynamic from "next/dynamic";
+import styles from "../styles/styles.module.css";
+import Link from "next/link";
+
+const Layout = dynamic(() => import("../components/layout"), { ssr: false });
+
+const contactLink = "/contact";
 
 export default function Home() {
   return (
-    <div className={styles.mycontainer}>
-      <PageHeader />
-      <h1>test</h1>
-    </div>
+    <Layout>
+      <h1 className={styles.mynav}>test</h1>
+      <Link href={contactLink} prefetch>
+        Contact
+      </Link>
+    </Layout>
   );
 }

@@ -11,6 +11,10 @@
   --honey: rgba(255, 196, 0, 0.87);
 }
 
+body {
+  background-color: var(--oceanslate);
+}
+
 h2 {
   display: inline;
   font-style: oblique;

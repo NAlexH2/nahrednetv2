@@ -1,9 +1,8 @@
 
-.mycontainer {
+.container {
   background: var(--oceanslate);
   color: var(--toastedalmond);
   font-size: 17px;
-  font-family: "Josefin Sans", sans-serif;
 }
 
 .mynav {
