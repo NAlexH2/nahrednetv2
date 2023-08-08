@@ -1,11 +1,3 @@
-:root {
-  --toastedalmond: #eed5bf;
-  --transparentalmond: #ffc0896c;
-  --white: white;
-  --oceanslate: #243f4c;
-  --oceanslatelight: #45738a;
-  --honey: rgba(255, 196, 0, 0.87);
-}
 
 .mycontainer {
   background: var(--oceanslate);
@@ -162,10 +154,6 @@
   height: auto;
 }
 
-h2 {
-  display: inline;
-  font-style: oblique;
-}
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   .shortBioBump {
@@ -206,22 +194,4 @@ h2 {
   }
 }
 
-@media (max-width: 767px) {
-  hr {
-    border: solid;
-    border-color: black;
-    border-style: solid;
-    opacity: 1;
-  }
-  .row > hr {
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 35px;
-  }
-}
 
-@media (min-width: 768px) {
-  hr {
-    display: none;
-  }
-}
