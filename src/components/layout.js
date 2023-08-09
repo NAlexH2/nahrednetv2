@@ -3,20 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/styles.module.css";
 import beard from "../../public/images/beard.svg";
+import { SquarePegTrue, Josefin } from "./fonts";
 
-import { Josefin_Sans, Square_Peg } from "next/font/google";
-
-const Josefin = Josefin_Sans({
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  subsets: ["latin"],
-});
-
-const SquarePeg = Square_Peg({
-  weight: ["400"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
 export const siteTitle = "nah-red.net";
 
 export default function Layout({ children }) {
@@ -27,15 +15,15 @@ export default function Layout({ children }) {
         <link rel="nrnlogo" href="images/logo192.png" />
         <link rel="icon" href="images/favicon.png" />
       </Head>
-
-      <header className="flex justify-center">test</header>
-      <span className="flex justify-center">
-        <Link id="imagenavtext" href="/">
-          <Image id="mynavlogo" src={beard} alt="website logo" />
-          Alex Harris
-        </Link>
-      </span>
-
+      <Link
+        className={SquarePegTrue.className}
+        id={styles.imagenavtext}
+        href="/"
+        prefetch
+      >
+        <Image id={styles.mynavlogo} src={beard} alt="website logo" />
+        Alex Harris
+      </Link>
       <main>{children}</main>
     </div>
   );

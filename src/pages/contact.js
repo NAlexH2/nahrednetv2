@@ -7,7 +7,9 @@ export default function Contact() {
     <Layout>
       <h1>Contact page</h1>
       <h2>
-        <Link href="/">Back to home</Link>
+        <Link href="/" prefetch>
+          Back to home
+        </Link>
       </h2>
     </Layout>
   );
