@@ -19,7 +19,6 @@ export default function Layout({ children }) {
         className={SquarePegTrue.className}
         id={styles.imagenavtext}
         href="/"
-        prefetch
       >
         <Image id={styles.mynavlogo} src={beard} alt="website logo" />
         Alex Harris
