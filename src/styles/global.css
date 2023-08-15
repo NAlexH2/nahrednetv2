@@ -20,6 +20,11 @@ h2 {
   font-style: oblique;
 }
 
+button {
+  background-color: unset;
+  border: 0px;
+}
+
 @media (max-width: 767px) {
   hr {
     border: solid;
