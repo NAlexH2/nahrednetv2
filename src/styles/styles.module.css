@@ -1,5 +1,6 @@
-
 .container {
+  font-family: JosefinSans;
+  font-weight: 400;
   background: var(--oceanslate);
   color: var(--toastedalmond);
   font-size: 17px;
@@ -33,10 +34,13 @@
 }
 
 #imagenavtext {
-  margin-right: 50px;
-  font-size: 100px;
   text-decoration: var(--honey) underline;
-  color: unset;
+  color: var(--toastedalmond);
+  font-family: SquarePeg;
+  font-size: 100px;
+  margin-right: 50px;
+  background-color: unset;
+  border: 0px;
 }
 
 #imagenavtext:hover {
@@ -152,7 +156,6 @@
   height: auto;
 }
 
-
 @media (min-width: 1200px) and (max-width: 1399px) {
   .shortBioBump {
     max-width: 480px;
@@ -191,5 +194,3 @@
     --bs-border-color: null;
   }
 }
-
-
