@@ -1,0 +1,195 @@
+
+.container {
+  background: var(--oceanslate);
+  color: var(--toastedalmond);
+  font-size: 17px;
+}
+
+.mynav {
+  font-size: 40px;
+}
+
+.mynav #currentnav {
+  margin: 10px;
+  text-decoration: black underline;
+  color: white;
+}
+
+.mynav #navtext {
+  margin: 10px;
+  text-decoration: var(--honey) underline;
+  color: unset;
+}
+
+#mynavlogo {
+  margin-right: 30px;
+  height: 50px;
+  width: auto;
+}
+
+.mynav #navtext:hover {
+  text-decoration: var(--toastedalmond) underline;
+  color: var(--honey);
+}
+
+#imagenavtext {
+  margin-right: 50px;
+  font-size: 100px;
+  text-decoration: var(--honey) underline;
+  color: unset;
+}
+
+#imagenavtext:hover {
+  text-decoration: var(--toastedalmond) underline;
+  color: var(--honey);
+}
+
+.headshot {
+  border: 2.6px;
+  border-radius: 4%;
+  border-style: solid;
+}
+
+.myButton {
+  background-color: var(--toastedalmond);
+  color: black;
+}
+
+.about {
+  max-width: 800px;
+}
+
+.footer {
+  margin-top: 30px;
+}
+
+.shortBioBump {
+  margin-top: -15px;
+}
+
+.bs-li-overrides {
+  font-size: 18px;
+  --bs-list-group-bg: null;
+  --bs-list-group-border-width: 5px;
+  --bs-list-group-border-color: var(--honey);
+  --bs-list-group-color: var(--toastedalmond);
+  border-style: groove;
+}
+
+.border-end,
+.border-start {
+  --bs-border-width: 3px;
+  --bs-border-style: inset;
+  --bs-border-color: var(--honey);
+}
+
+.accordion {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  --bs-accordion-bg: var(--toastedalmond);
+  --bs-accordion-border-color: var(--honey);
+  --bs-accordion-border-width: 6px;
+  --bs-accordion-active-color: var(--honey);
+  --bs-accordion-active-bg: var(--oceanslatelight);
+  --bs-accordion-btn-focus-border-color: var(--honey);
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--honey);
+  --bs-btn-border-color: black;
+  --bs-btn-color: black;
+}
+
+.btn-secondary {
+  --bs-btn-bg: black;
+  --bs-btn-border-color: var(--honey);
+  --bs-btn-color: var(--honey);
+}
+
+.card {
+  --bs-card-bg: black;
+  padding: 0%;
+}
+
+.card * .btn-primary {
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: var(--toastedalmond);
+  --bs-btn-hover-border-color: black;
+}
+
+.accordionHR {
+  border: black solid 2px;
+  max-width: 90%;
+  margin: 30px 100px 40px 100px;
+}
+
+#myface {
+  margin-bottom: 40px;
+}
+
+#unilink {
+  color: var(--white);
+  text-decoration: var(--honey) underline;
+}
+
+#unilink:hover {
+  text-decoration: var(--toastedalmond) underline;
+  color: var(--honey);
+}
+
+#currentcons {
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+#extendedbio {
+  margin-top: 10px;
+}
+
+#contact-image {
+  width: 60px;
+  height: auto;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .shortBioBump {
+    max-width: 480px;
+  }
+  #extendedbio {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .shortBioBump {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #imagenavtext {
+    font-size: 68px;
+  }
+  .mynav {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .border-end {
+    --bs-border-color: null;
+  }
+  .border-start {
+    --bs-border-color: null;
+  }
+}
+
+
