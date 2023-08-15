@@ -1,11 +1,12 @@
 import React from 'react';
-import { globals, styles } from "./styles";
-
+import { styles } from "./styles";
+import NavBar from './components/navBar';
 
 function Nahrednet() {
   return (
     <div>
-      <h1>hey</h1>
+      <NavBar />
+      <h1 className={styles.container}>My name is Alex Harris</h1>
     </div>
   );
 }
