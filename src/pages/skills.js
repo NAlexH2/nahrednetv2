@@ -1,14 +1,13 @@
+import React from "react";
+import styles from "../styles/styles.module.css";
 import Link from "next/link";
-import dynamic from "next/dynamic";
-const Layout = dynamic(() => import("../components/layout"), { ssr: false });
 
-export default function Contact() {
+export const Skills = () => {
   return (
-    <Layout>
-      <h1>Skills page</h1>
-      <h2>
-        <Link href="/">Back to home</Link>
-      </h2>
-    </Layout>
+    <>
+      <h1 className={styles.mynav}>Skills page</h1>
+    </>
   );
-}
+};
+
+export default Skills;
