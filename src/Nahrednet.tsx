@@ -1,11 +1,11 @@
 import React from 'react';
 import { styles } from "./styles";
-import NavBar from './components/navBar';
+import NavDriver from './components/ui/navDriver';
 
 function Nahrednet() {
   return (
     <div>
-      <NavBar />
+      <NavDriver />
       <h1 className={styles.container}>My name is Alex Harris</h1>
     </div>
   );
