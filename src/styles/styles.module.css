@@ -8,6 +8,7 @@
 
 .mynav {
   font-size: 40px;
+  color: var(--toastedalmond);
 }
 
 .mynav #currentnav {
@@ -23,7 +24,8 @@
 }
 
 #mynavlogo {
-  margin-right: 30px;
+  display: flex;
+  margin-right: 20px;
   height: 50px;
   width: auto;
 }
@@ -38,7 +40,8 @@
   color: var(--toastedalmond);
   font-family: SquarePeg;
   font-size: 100px;
-  margin-right: 50px;
+  display: flex;
+  align-items: center;
 }
 
 #imagenavtext:hover {
@@ -190,5 +193,15 @@
   }
   .border-start {
     --bs-border-color: null;
+  }
+}
+
+@media (max-width: 576px) {
+  #imagenavtext {
+    visibility: collapse;
+  }
+  #mynavlogo {
+    margin: 0;
+    visibility: visible;
   }
 }
