@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import { styles } from "styles";
 import PageRender from "./pageRender";
-import { Button } from "@mui/material";
 import MButton from "./mButton";
 
-const beard = "images/beard.svg";
-const index = "index";
-const skills = "skills";
-const projects = "projects";
-const contact = "contact";
+const beard: string = "images/beard.svg";
+const index: string = "index";
+const skills: string = "skills";
+const projects: string = "projects";
+const contact: string = "contact";
 
 const NavDriver = () => {
-  const [currentPage, setCurrentPage] = useState(index); // 'home' or 'contact'
+  const [currentPage, setCurrentPage] = useState(index);
 
   const setCurrentNav = (toChange: string) => {
     return currentPage === toChange ? styles.currentnav : styles.navtext;
