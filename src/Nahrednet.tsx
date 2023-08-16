@@ -1,12 +1,12 @@
-import React from 'react';
-import { styles } from "./styles";
-import NavDriver from './components/ui/navDriver';
+import React from "react";
+import NavDriver from "./components/ui/navDriver";
 
 function Nahrednet() {
   return (
     <div>
       <NavDriver />
-      <h1 className={styles.container}>My name is Alex Harris</h1>
+      {/* <contact/>
+          <copyright/> */}
     </div>
   );
 }
