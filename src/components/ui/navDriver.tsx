@@ -26,27 +26,30 @@ const NavDriver = () => {
         </MButton>
       </div>
       <span className={`${styles.mynav} flex justify-center`}>
-        <Button id={setCurrentNav(index)} onClick={() => setCurrentPage(index)}>
+        <MButton
+          id={setCurrentNav(index)}
+          onClick={() => setCurrentPage(index)}
+        >
           Bio
-        </Button>
-        <Button
+        </MButton>
+        <MButton
           id={setCurrentNav(skills)}
           onClick={() => setCurrentPage(skills)}
         >
           Skills
-        </Button>
-        <Button
+        </MButton>
+        <MButton
           id={setCurrentNav(projects)}
           onClick={() => setCurrentPage(projects)}
         >
           Projects
-        </Button>
-        <Button
+        </MButton>
+        <MButton
           id={setCurrentNav(contact)}
           onClick={() => setCurrentPage(contact)}
         >
           Contact
-        </Button>
+        </MButton>
       </span>
       <main>{PageRender(currentPage)}</main>
     </div>
