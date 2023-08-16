@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { styles } from "styles";
 import PageRender from "./pageRender";
+import { Button } from "@mui/material";
+import MButton from "./mButton";
 
 const beard = "images/beard.svg";
 const index = "index";
@@ -17,41 +19,34 @@ const NavDriver = () => {
 
   return (
     <div>
-      <div className="flex justify-center">
-        <button onClick={() => setCurrentPage(index)}>
-          <img
-            typeof="button"
-            id={styles.mynavlogo}
-            src={beard}
-            alt="website logo"
-          />
-        </button>
-        <button id={styles.imagenavtext} onClick={() => setCurrentPage(index)}>
-          Alex Harris
-        </button>
+      <div className={"flex justify-center"}>
+        <MButton onClick={() => setCurrentPage(index)}>
+          <img id={styles.mynavlogo} src={beard} alt="website logo" />
+          <div id={styles.imagenavtext}>Alex Harris</div>
+        </MButton>
       </div>
       <span className={`${styles.mynav} flex justify-center`}>
-        <button id={setCurrentNav(index)} onClick={() => setCurrentPage(index)}>
+        <Button id={setCurrentNav(index)} onClick={() => setCurrentPage(index)}>
           Bio
-        </button>
-        <button
+        </Button>
+        <Button
           id={setCurrentNav(skills)}
           onClick={() => setCurrentPage(skills)}
         >
           Skills
-        </button>
-        <button
+        </Button>
+        <Button
           id={setCurrentNav(projects)}
           onClick={() => setCurrentPage(projects)}
         >
           Projects
-        </button>
-        <button
+        </Button>
+        <Button
           id={setCurrentNav(contact)}
           onClick={() => setCurrentPage(contact)}
         >
           Contact
-        </button>
+        </Button>
       </span>
       <main>{PageRender(currentPage)}</main>
     </div>
