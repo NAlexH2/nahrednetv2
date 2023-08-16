@@ -2,30 +2,29 @@ import React from "react";
 import { Button } from "@mui/material";
 
 interface MButtonProps {
-  text?: string;
-  className?: string | undefined;
-  id?: string | undefined;
+  className?: string;
+  id?: string;
   onClick?: () => void;
-  children?: React.ReactNode | undefined;
+  children?: React.ReactNode;
 }
 
 const MButton = (prop: MButtonProps) => {
   return (
     <Button
       variant="contained"
-      className={prop.className !== undefined ? prop.className : undefined}
-      id={prop.id !== undefined ? prop.id : undefined}
+      className={prop.className}
+      id={prop.id}
       onClick={prop.onClick}
       sx={{
         "&:hover": { backgroundColor: "transparent", boxShadow: "none" },
         backgroundColor: "transparent",
         boxShadow: "none",
         textTransform: "none",
+        font: "inherit",
       }}
       disableRipple
     >
       {prop.children}
-      {prop.text}
     </Button>
   );
 };
