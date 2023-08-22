@@ -42,20 +42,3 @@ button {
     display: none;
   }
 }
-
-@font-face {
-  font-family: SquarePeg;
-  src: local("SquarePeg"), url("../fonts/SquarePeg-Reg.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: JosefinSans;
-  src: local("JosefinSans"),
-    url("../fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: JosefinSansItalic;
-  src: local("JosefinSansItalic"),
-    url("../fonts/JosefinSans-Italic-VariableFont_wght.ttf") format("truetype");
-}

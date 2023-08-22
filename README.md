@@ -1,23 +1,34 @@
-# nah-red.net
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This is a final project for CS410 Introduction to Web Development at Portland
-State University.
+## Getting Started
 
-<br />
+First, run the development server:
 
-# How to Run
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-Requires nothing on your part! Simply visit [nah-red.net](https://www.nah-red.net/)
-and explore to your hearts desire.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-<br />
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-# How is this being deployed? What are you using to make this website?
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-This website is being deployed with [AWS Amplify](https://aws.amazon.com/amplify/faqs/) through GitHub every time a new push has been detected. I wanted to explore managing a website through a more enterprise perspective and felt this was a great choice. With AWS I was also able to establish a personal email through my website that people are able to contact me with. The form on the site also sends me an email to this address when filled out and submitted correctly.
+## Learn More
 
-Additionally, the website is built using a combination of HTML (with [Bootstrap](https://getbootstrap.com/)), CSS and JavaScript.
+To learn more about Next.js, take a look at the following resources:
 
-Utilizing the `Date` library with JavaScript, a greeting is displayed based on the users location and current time of day. It pulls the users local time and determines (based on 24hr format) if it's before noon, after-noon or the evening (past 4pm).
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-The contact form is handled by [Formspree](https://formspree.io).
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
