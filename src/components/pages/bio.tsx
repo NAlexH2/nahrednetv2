@@ -6,16 +6,14 @@ import Headshot from "/public/images/hs2-small.jpg";
 export const Bio = () => {
   return (
     <div className={`${styles.container}`}>
-      <div>
+      <div className="flex justify-center">
         <NRNImage
           id={styles.myface}
-          className={styles.headshot}
+          className={`${styles.headshot}`}
           src={Headshot}
           alt="Alex Harris"
         />
-      </div>
-      <div>
-        <h1 className={styles.mynav}>Bio</h1>
+        <h1 className={`${styles.bio} mx-16`}>Bio</h1>
       </div>
     </div>
   );
