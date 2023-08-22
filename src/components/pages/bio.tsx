@@ -1,15 +1,16 @@
 import React from "react";
 import { styles } from "styles";
+import NRNImage from "components/ui/nrnImage";
+import Headshot from "/public/images/hs2-small.jpg";
 
-const headshot: string = "images/hs2-small.jpg";
 export const Bio = () => {
   return (
     <div className={`${styles.container}`}>
       <div>
-        <img
-          id="myface"
+        <NRNImage
+          id={styles.myface}
           className={styles.headshot}
-          src={headshot}
+          src={Headshot}
           alt="Alex Harris"
         />
       </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { styles } from "styles";
-import PageRender from "./pageRender";
+import PageRender from "../pageRender";
 import MButton from "./mButton";
 
 const beard: string = "images/beard.svg";

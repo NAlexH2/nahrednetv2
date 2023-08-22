@@ -1,5 +1,5 @@
 import React from "react";
-import NavDriver from "./components/ui/navDriver";
+// import NavDriver from "../components/ui/navDriver";
 
 function Nahrednet() {
   return (

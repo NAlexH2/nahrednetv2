@@ -8,7 +8,7 @@ interface MButtonProps {
   children?: React.ReactNode;
 }
 
-const MButton = (prop: MButtonProps) => {
+const nrnButton = (prop: MButtonProps) => {
   return (
     <Button
       variant="contained"
@@ -29,4 +29,4 @@ const MButton = (prop: MButtonProps) => {
   );
 };
 
-export default MButton;
+export default nrnButton;

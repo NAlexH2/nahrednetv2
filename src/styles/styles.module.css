@@ -1,5 +1,4 @@
 .container {
-  font-family: JosefinSans;
   font-weight: 400;
   background: var(--oceanslate);
   color: var(--toastedalmond);
@@ -38,7 +37,6 @@
 #imagenavtext {
   text-decoration: var(--honey) underline;
   color: var(--toastedalmond);
-  font-family: SquarePeg;
   font-size: 100px;
   display: flex;
   align-items: center;
@@ -54,6 +52,7 @@
   border-radius: 3%;
   border-style: solid;
   max-width: 25%;
+  margin-bottom: 40px;
   min-width: 250px;
 }
 
@@ -129,10 +128,6 @@
   border: black solid 2px;
   max-width: 90%;
   margin: 30px 100px 40px 100px;
-}
-
-#myface {
-  margin-bottom: 40px;
 }
 
 #unilink {
