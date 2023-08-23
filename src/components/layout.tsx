@@ -1,25 +1,18 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import styles from "styles/styles.module.css";
-import beard from "/public/images/beard.svg";
-import { SquarePegTrue, Josefin } from "../fonts/fonts";
-import PageRender from "./pageRender";
-import MButton from "./ui/nrnButton";
+import { NavBar, PageHeader, Josefin } from "./ui";
+
+import PageRender from "./utils/pageRender";
 
 export const siteTitle = "nah-red.net";
 
 const index: string = "index";
-const skills: string = "skills";
-const projects: string = "projects";
-const contact: string = "contact";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [currentPage, setCurrentPage] = useState(index);
-
-  const setCurrentNav = (toChange: string) => {
-    return currentPage === toChange ? styles.currentnav : styles.navtext;
+  const updateParentState = (newPage: string) => {
+    setCurrentPage(newPage);
   };
 
   return (
@@ -29,40 +22,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <link rel="nrnlogo" href="images/logo192.png" />
         <link rel="icon" href="images/favicon.png" />
       </Head>
-      <div className={"flex justify-center"}>
-        <MButton onClick={() => setCurrentPage(index)}>
-          <Image id={styles.mynavlogo} src={beard} alt="website logo" />
-          <div className={SquarePegTrue.className} id={styles.imagenavtext}>
-            Alex Harris
-          </div>
-        </MButton>
-      </div>
-      <span className={`${styles.mynav} flex justify-center`}>
-        <MButton
-          id={setCurrentNav(index)}
-          onClick={() => setCurrentPage(index)}
-        >
-          Bio
-        </MButton>
-        <MButton
-          id={setCurrentNav(skills)}
-          onClick={() => setCurrentPage(skills)}
-        >
-          Skills
-        </MButton>
-        <MButton
-          id={setCurrentNav(projects)}
-          onClick={() => setCurrentPage(projects)}
-        >
-          Projects
-        </MButton>
-        <MButton
-          id={setCurrentNav(contact)}
-          onClick={() => setCurrentPage(contact)}
-        >
-          Contact
-        </MButton>
-      </span>
+      <PageHeader onUpdate={updateParentState} />
+      <NavBar onUpdate={updateParentState} thisPage={currentPage} />
       <span>{PageRender(currentPage)}</span>
       <main>{children}</main>
     </div>
