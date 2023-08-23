@@ -8,7 +8,7 @@ interface MButtonProps {
   children?: React.ReactNode;
 }
 
-const nrnButton = (prop: MButtonProps) => {
+const NRNButton = (prop: MButtonProps) => {
   return (
     <Button
       variant="contained"
@@ -21,6 +21,7 @@ const nrnButton = (prop: MButtonProps) => {
         boxShadow: "none",
         textTransform: "none",
         font: "inherit",
+        padding: 0,
       }}
       disableRipple
     >
@@ -29,4 +30,4 @@ const nrnButton = (prop: MButtonProps) => {
   );
 };
 
-export default nrnButton;
+export default NRNButton;
