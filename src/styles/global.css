@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-2xl;
+    display: inline;
+    font-style: oblique;
+  }
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+}
+
 :root {
   --toastedalmond: #eed5bf;
   --transparentalmond: #ffc0896c;
@@ -15,10 +31,6 @@ body {
   background-color: var(--oceanslate);
 }
 
-h2 {
-  display: inline;
-  font-style: oblique;
-}
 button {
   background-color: unset;
   border: 0px;
