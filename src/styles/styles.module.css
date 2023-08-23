@@ -48,12 +48,10 @@
 }
 
 .headshot {
-  border: 2.6px;
-  border-radius: 3%;
+  border: 3px;
+  border-radius: 4%;
   border-style: solid;
-  max-width: 25%;
   margin-bottom: 40px;
-  min-width: 250px;
 }
 
 .myButton {
