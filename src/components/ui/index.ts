@@ -4,7 +4,6 @@ import NRNImage from "./nrnImage";
 import SystemTimeGreeting from "./systemTimeGreeting";
 import PageHeader from "./pageHeader";
 import { SquarePegTrue, Josefin } from "../../fonts/fonts";
-import CurrentNavPage from "../utils/currentNavPage";
 
 export {
   NavBar,
@@ -14,5 +13,4 @@ export {
   PageHeader,
   SquarePegTrue,
   Josefin,
-  CurrentNavPage,
 };
