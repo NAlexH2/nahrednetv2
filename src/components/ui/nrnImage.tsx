@@ -6,7 +6,6 @@ interface nrnImageProps {
   className?: string;
   id?: string;
   alt: string;
-  onClick?: () => void;
   children?: React.ReactNode;
 }
 
@@ -15,7 +14,6 @@ export const NRNImage = (prop: nrnImageProps) => {
     <Image
       className={prop.className}
       id={prop.id}
-      onClick={prop.onClick}
       style={{ color: "inherit" }}
       src={prop.src}
       alt={prop.alt}
