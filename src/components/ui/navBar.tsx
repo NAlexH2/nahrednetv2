@@ -16,20 +16,23 @@ export const NavBar = ({ onUpdate, thisPage }: NavBarProps) => {
     return thisPage === toChange ? styles.currentnav : styles.navtext;
   };
   return (
-    <nav className={`${styles.mynav} flex justify-center mb-5`}>
+    <nav className={`${styles.mynav} flex justify-center mb-7`}>
       <NRNButton
+        className="max-md:mr-0.5 md:mr-8"
         id={updateCurrentNavStyle(index)}
         onClick={() => onUpdate(index)}
       >
         Bio
       </NRNButton>
       <NRNButton
+        className="max-md:mr-3 md:mr-8"
         id={updateCurrentNavStyle(skills)}
         onClick={() => onUpdate(skills)}
       >
         Skills
       </NRNButton>
       <NRNButton
+        className="max-md:mr-3 md:mr-8"
         id={updateCurrentNavStyle(projects)}
         onClick={() => onUpdate(projects)}
       >
