@@ -10,7 +10,7 @@ interface NavBarProps {
 
 const PageHeader = ({ onUpdate }: NavBarProps) => {
   return (
-    <header className={"flex justify-center"}>
+    <header className={"flex justify-center mt-2"}>
       <NRNButton onClick={() => onUpdate(index)}>
         <NRNImage id={styles.mynavlogo} src={beard} alt="website logo" />
         <div className={SquarePegTrue.className} id={styles.imagenavtext}>
