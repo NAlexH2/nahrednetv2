@@ -11,13 +11,11 @@
 }
 
 .mynav #currentnav {
-  margin: 10px;
   text-decoration: black underline;
   color: white;
 }
 
 .mynav #navtext {
-  margin: 10px;
   text-decoration: var(--honey) underline;
   color: unset;
 }
@@ -40,6 +38,7 @@
   font-size: 100px;
   display: flex;
   align-items: center;
+  text-underline-offset: 7px;
 }
 
 #imagenavtext:hover {
@@ -51,17 +50,13 @@
   border: 3px;
   border-radius: 4%;
   border-style: solid;
+  min-height: 200px;
+  min-width: 200px;
 }
 
 .myButton {
   background-color: var(--toastedalmond);
   color: black;
-}
-
-.about {
-  max-width: 576px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .footer {
@@ -153,6 +148,11 @@
   height: auto;
 }
 
+@media (min-width: 1400px) {
+  .shortBioBump {
+    max-width: 540px;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1399px) {
   .shortBioBump {
     max-width: 480px;
@@ -162,22 +162,13 @@
   }
 }
 
-@media (min-width: 1400px) {
-  .shortBioBump {
-    max-width: 540px;
-  }
-}
-
 @media (max-width: 768px) {
   #imagenavtext {
     font-size: 68px;
   }
   .mynav {
-    font-size: 30px;
+    font-size: 2rem;
   }
-}
-
-@media (max-width: 768px) {
   .border-end {
     --bs-border-color: null;
   }
@@ -186,12 +177,14 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 640px) {
   #imagenavtext {
-    visibility: collapse;
+    display: none;
   }
   #mynavlogo {
-    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     visibility: visible;
   }
 }

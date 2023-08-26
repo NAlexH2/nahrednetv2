@@ -10,6 +10,8 @@
     @apply text-2xl;
     display: inline;
     font-style: oblique;
+    font-size: calc(1.325rem + 0.9vw);
+    margin-bottom: 0.5rem;
   }
   h3 {
     font-size: 1.75rem;
