@@ -1,35 +1,41 @@
 import React from "react";
 import { styles } from "styles";
 import NRNImage from "components/ui/nrnImage";
-import Greeting from "components/ui/systemTimeGreeting";
 import Headshot from "/public/images/hs2-small.jpg";
+import {
+  BioBegin,
+  FriendsDescribe,
+  PastBio,
+  PresentBio,
+} from "components/ui/bioElements";
 
 const Bio = () => {
   return (
-    <div className="flex justify-center">
-      <div className="md:flex justify-center md:ml-7 md:mr-12 md:mb-8">
-        {/* <span className="sm:columns-5 xl:mr-16 h-auto"></span> */}
-
-        <div className="justify-center max-md:flex md:mr-5 max-md:mx-10">
+    <div>
+      <div className="md:flex justify-center md:mx-12 mb-7 max-md:px-10">
+        <div className="justify-center max-md:flex">
           <NRNImage
-            className={`${styles.headshot} max-h-72 w-auto`}
+            className={`${styles.headshot} max-h-80 w-auto`}
             src={Headshot}
             alt="Alex Harris"
           />
         </div>
-        <div className="">
-          <div className={`${styles.about}`}>
-            <Greeting />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-            eligendi, sequi, neque fuga consectetur alias inventore deserunt
-            ullam distinctio rerum maxime. Illo non odit sint temporibus porro
-            laudantium iusto quae! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Repellat at id facilis fugit ut labore. Ex
-            accusamus cupiditate dignissimos quasi quam qui adipisci eum?
-            Voluptatum tempora sint voluptatem est hic?
-          </div>
-        </div>
-        {/* <span className="xl:columns-5 xl:ml-16"></span> */}
+        <text className="flex justify-center md:ml-10">
+          <BioBegin />
+        </text>
+      </div>
+      <text className="flex justify-center max-md:px-10">
+        <text
+          className="max-w-xl md:max-w-5xl text-justify 
+        lg:hidden md:mx-12 mb-4"
+        >
+          {<FriendsDescribe />}
+        </text>
+      </text>
+      <div className="md:flex justify-start md:mx-12 mb-7 max-md:px-10">
+        <h2>Past:</h2>
+
+        <text className="flex justify-center md:ml-10">{<PastBio />}</text>
       </div>
     </div>
   );
