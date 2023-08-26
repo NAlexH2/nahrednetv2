@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, Box } from "@mui/material";
 
 interface MButtonProps {
   className?: string;
@@ -10,23 +10,24 @@ interface MButtonProps {
 
 const NRNButton = (prop: MButtonProps) => {
   return (
-    <Button
-      variant="contained"
-      className={prop.className}
-      id={prop.id}
-      onClick={prop.onClick}
-      sx={{
-        "&:hover": { backgroundColor: "transparent", boxShadow: "none" },
-        backgroundColor: "transparent",
-        boxShadow: "none",
-        textTransform: "none",
-        font: "inherit",
-        padding: 0,
-      }}
-      disableRipple
-    >
-      {prop.children}
-    </Button>
+    <Box className={prop.className}>
+      <Button
+        variant="contained"
+        id={prop.id}
+        onClick={prop.onClick}
+        sx={{
+          "&:hover": { backgroundColor: "transparent", boxShadow: "none" },
+          backgroundColor: "transparent",
+          boxShadow: "none",
+          textTransform: "none",
+          font: "inherit",
+          padding: 0,
+        }}
+        disableRipple
+      >
+        {prop.children}
+      </Button>
+    </Box>
   );
 };
 
