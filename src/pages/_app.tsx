@@ -8,9 +8,7 @@ const Layout = dynamic(() => import("../components/layout"), { ssr: false });
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Component {...pageProps} />
     </>
   );
 }

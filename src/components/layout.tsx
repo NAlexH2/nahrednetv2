@@ -9,7 +9,7 @@ export const siteTitle = "nah-red.net";
 
 const index: string = "index";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children?: React.ReactNode }) {
   const [currentPage, setCurrentPage] = useState(index);
   const updateParentState = (newPage: string) => {
     setCurrentPage(newPage);
