@@ -1,4 +1,6 @@
-import { NRNButton, NRNImage, SquarePegTrue } from ".";
+import { SquarePegTrue } from "../fonts";
+import { NRNButton } from "../nrnButtons";
+import { NRNImage } from "../imageComponents";
 import { styles } from "styles";
 import beard from "/public/images/beard.svg";
 
