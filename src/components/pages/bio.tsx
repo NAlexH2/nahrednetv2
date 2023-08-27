@@ -11,32 +11,44 @@ import {
 
 const Bio = () => {
   return (
-    <div>
-      <div className="md:flex justify-center md:mx-12 mb-7 max-md:px-10">
-        <div className="justify-center max-md:flex">
-          <NRNImage
-            className={`${styles.headshot} max-h-80 w-auto`}
-            src={Headshot}
-            alt="Alex Harris"
-          />
+    <div className="container mx-auto">
+      <div>
+        <div className="md:flex justify-center md:mx-12 mb-7 max-md:px-10">
+          <div className="justify-center max-md:flex">
+            <NRNImage
+              className={`${styles.headshot} max-h-80 w-auto max-md:mb-7`}
+              src={Headshot}
+              alt="Alex Harris"
+            />
+          </div>
+          <text className="flex justify-center md:ml-10">
+            <BioBegin />
+          </text>
         </div>
-        <text className="flex justify-center md:ml-10">
-          <BioBegin />
-        </text>
-      </div>
-      <text className="flex justify-center max-md:px-10">
-        <text
-          className="max-w-xl md:max-w-5xl text-justify 
+        <text className="flex justify-center max-md:px-10">
+          <text
+            className="max-w-xl md:max-w-5xl text-justify 
         lg:hidden md:mx-12 mb-4"
-        >
-          {<FriendsDescribe />}
+          >
+            {<FriendsDescribe />}
+          </text>
         </text>
-      </text>
-      <div className="md:flex justify-start md:mx-12 mb-7 max-md:px-10">
-        <h2>Past:</h2>
-
-        <text className="flex justify-center md:ml-10">{<PastBio />}</text>
       </div>
+      <span
+        className="2xl:pl-80 xl:pl-44 lg:pl-12 
+      md:pl-12 sm:pl-10 max-sm:pl-10"
+      >
+        <h2 className="2xl:-ml-5">Past:</h2>
+      </span>
+      <br className="mb-2.5" />
+      <span
+        className="2xl:pl-80 xl:pl-44 lg:pl-12 
+      md:pl-12 sm:pl-10 max-sm:pl-10"
+      >
+        <text className="2xl:-ml-5 mt-5">
+          <PastBio />
+        </text>
+      </span>
     </div>
   );
 };
