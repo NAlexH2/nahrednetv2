@@ -162,7 +162,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #imagenavtext {
     font-size: 68px;
   }
