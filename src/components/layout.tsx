@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import styles from "styles/styles.module.css";
-import { NavBar, PageHeader, Josefin } from "./ui";
-
-import PageRender from "./utils/pageRender";
-import SmNavBar from "./ui/navBar/smNavBar";
+import { Josefin } from "./ui/fonts";
+import { PageHeader } from "./ui/pageHeader";
+import { NavBar, SmNavBar } from "./ui/navBar";
+import { PageRender } from "./utils";
+import { PageFooter } from "./ui/pageFooter";
 
 export const siteTitle = "nah-red.net";
 
@@ -34,8 +35,8 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
         <NavBar onUpdate={updateParentState} thisPage={currentPage} />
       </div>
       <main>{children}</main>
-
       <span>{PageRender(currentPage)}</span>
+      <div>{<PageFooter />}</div>
     </div>
   );
 }
