@@ -3,8 +3,7 @@ import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import { styles } from "styles";
-import { NRNButton } from "..";
-import NRNHamburgerButton from "../nrnButtons/nrnHamburgerMenu";
+import { NRNButton, NRNHamburgerButton } from "../nrnButtons";
 
 type Anchor = "left";
 
