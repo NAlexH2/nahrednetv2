@@ -2,7 +2,7 @@ import { arch } from "os";
 
 export const PresentBio = () => {
   return (
-    <>
+    <div className="text-justify xl:ml-3">
       <p>
         As of the Summer of 2023 - and due to a variety of circumstances - I am
         simply student worker as a Graduate student at Portland State University
@@ -11,9 +11,9 @@ export const PresentBio = () => {
         2024. My plan is to take a large variety of courses that explore both
         Software Engineering and Artificial Intelligence. I currently am focused
         on self-teaching and exploring React through various supporting
-        frameworks such as NextJS and React Native over my summer break.{" "}
+        frameworks such as NextJS and React Native over my summer break.
       </p>
-    </>
+    </div>
   );
 };
 
