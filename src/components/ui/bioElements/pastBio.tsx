@@ -23,8 +23,8 @@ export const PastBio = () => {
       Upon finishing my time in the Navy, I returned to Portland State as the
       COVID pandemic started in the Spring of 2020. Since then I&#39;ve taken
       classes that have taught me foundational programming knowledge but also
-      algorithms and testing methodologies. For more on these please visit my
-      skills page.
+      algorithms and testing methodologies.{" "}
+      <b>For more on these please visit my skills section.</b>
       <br />
       <br />
       During the Summer of 2022, I took 16 credits in order to finalize my
