@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "styles";
-import NRNImage from "components/ui/nrnImage";
+import { NRNImage } from "components/ui/imageComponents";
 import Headshot from "/public/images/hs2-small.jpg";
 import {
   BioBegin,
