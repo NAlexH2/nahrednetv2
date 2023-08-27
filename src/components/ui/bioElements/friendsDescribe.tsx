@@ -1,5 +1,4 @@
 import React from "react";
-import { PastBio } from ".";
 
 export const FriendsDescribe = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { Index, Skills, Projects, Contact } from "components/pages/imports";
+import { Index, Skills, Projects, Contact } from "components/pages";
 
 const index: string = "index";
 const skills: string = "skills";
