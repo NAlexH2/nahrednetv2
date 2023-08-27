@@ -54,59 +54,6 @@
   min-width: 200px;
 }
 
-.myButton {
-  background-color: var(--toastedalmond);
-  color: black;
-}
-
-.footer {
-  margin-top: 30px;
-}
-
-.shortBioBump {
-  margin-top: -15px;
-}
-
-.bs-li-overrides {
-  font-size: 18px;
-  --bs-list-group-bg: null;
-  --bs-list-group-border-width: 5px;
-  --bs-list-group-border-color: var(--honey);
-  --bs-list-group-color: var(--toastedalmond);
-  border-style: groove;
-}
-
-.border-end,
-.border-start {
-  --bs-border-width: 3px;
-  --bs-border-style: inset;
-  --bs-border-color: var(--honey);
-}
-
-.accordion {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  --bs-accordion-bg: var(--toastedalmond);
-  --bs-accordion-border-color: var(--honey);
-  --bs-accordion-border-width: 6px;
-  --bs-accordion-active-color: var(--honey);
-  --bs-accordion-active-bg: var(--oceanslatelight);
-  --bs-accordion-btn-focus-border-color: var(--honey);
-  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
-}
-
-.btn-primary {
-  --bs-btn-bg: var(--honey);
-  --bs-btn-border-color: black;
-  --bs-btn-color: black;
-}
-
-.btn-secondary {
-  --bs-btn-bg: black;
-  --bs-btn-border-color: var(--honey);
-  --bs-btn-color: var(--honey);
-}
-
 .card {
   --bs-card-bg: black;
   padding: 0%;
