@@ -1,7 +1,7 @@
 import { styles } from "styles";
 import Link from "next/link";
 import { FriendsDescribe } from ".";
-import { SystemTimeGreeting as Greeting } from "..";
+import { Greeting } from "components/utils";
 
 export const BioBegin = () => {
   return (
@@ -12,14 +12,18 @@ export const BioBegin = () => {
         <b>Alex Harris</b>
       </i>{" "}
       and I am a Graduate student at{" "}
-      <Link href="https://www.pdx.edu/" id={styles.unilink}>
-        Portland State University
+      <Link href="https://www.pdx.edu/" legacyBehavior>
+        <a id={styles.unilink} target="_blank" rel="noopener noreferrer">
+          Portland State University
+        </a>
       </Link>
       {"."}
       <br />
       <br />I have completed my Undergrad program at the{" "}
-      <Link href="https://www.pdx.edu/engineering/" id={styles.unilink}>
-        Maseeh College of Engineering and Computer Science
+      <Link href="https://www.pdx.edu/engineering/" legacyBehavior>
+        <a id={styles.unilink} target="_blank" rel="noopener noreferrer">
+          Maseeh College of Engineering and Computer Science
+        </a>
       </Link>{" "}
       and obtained a Bachelors of Science in Computer Science, and completing a
       minor in Mathematics.
