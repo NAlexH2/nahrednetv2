@@ -34,21 +34,32 @@ const Bio = () => {
           </text>
         </text>
       </div>
-      <span
-        className="2xl:pl-80 xl:pl-44 lg:pl-12 
-      md:pl-12 sm:pl-10 max-sm:pl-10"
+      <div
+        className="2xl:px-80 xl:px-44 lg:px-12 
+      md:px-12 sm:px-10 max-sm:px-10"
       >
-        <h2 className="2xl:-ml-5">Past:</h2>
-      </span>
-      <br className="mb-2.5" />
-      <span
-        className="2xl:pl-80 xl:pl-44 lg:pl-12 
-      md:pl-12 sm:pl-10 max-sm:pl-10"
+        <h2 className="2xl:-ml-5 xl:-ml-1 mt-5 mb-4">Past:</h2>
+      </div>
+      <div
+        className="2xl:px-72 xl:px-40 lg:px-12 
+      md:px-12 sm:px-10 max-sm:px-10"
       >
-        <text className="2xl:-ml-5 mt-5">
-          <PastBio />
-        </text>
-      </span>
+        <PastBio />
+      </div>
+
+      <div
+        className="2xl:px-80 xl:px-44 lg:px-12 
+      md:px-12 sm:px-10 max-sm:px-10"
+      >
+        <br />
+        <h2 className="2xl:-ml-5 xl:-ml-1 mt-5 mb-4">Present:</h2>
+      </div>
+      <div
+        className="2xl:px-72 xl:px-40 lg:px-12 
+      md:px-12 sm:px-10 max-sm:px-10"
+      >
+        <PresentBio />
+      </div>
     </div>
   );
 };

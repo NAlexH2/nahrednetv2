@@ -1,9 +1,6 @@
-import { styles } from "styles";
-import Link from "next/link";
-
 export const PastBio = () => {
   return (
-    <p className="text-justify">
+    <p className="text-justify xl:ml-3">
       I found that College after High School was not the path for me - not yet
       at least. I spent 8 years active duty in the US Navy as an Electronics
       Technician where I worked on both internal and external means of
@@ -24,7 +21,7 @@ export const PastBio = () => {
       <br />
       <br />
       Upon finishing my time in the Navy, I returned to Portland State as the
-      COVID pandemic started in the Spring of 2020. Since then I've taken
+      COVID pandemic started in the Spring of 2020. Since then I&#39;ve taken
       classes that have taught me foundational programming knowledge but also
       algorithms and testing methodologies. For more on these please visit my
       skills page.
@@ -36,8 +33,8 @@ export const PastBio = () => {
       dedication to accomplish outstanding grades in a matter of eight weeks for
       four classes - Calculus 3, Statistics, Introduction to Web Development,
       and Advanced Programming with Java. I finished off the term with an
-      Advanced Programming with Java. I finished off the term with an 'A' letter
-      grade for each class.
+      Advanced Programming with Java. I finished off the term with an
+      &#39;A&#39; letter grade for each class.
     </p>
   );
 };
