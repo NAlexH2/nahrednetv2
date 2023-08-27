@@ -12,8 +12,16 @@ export const NRNHamburgerButton = () => {
   return (
     <>
       <MenuOpenIcon
-        sx={{ fontSize: "72px", color: "var(--toastedalmond)" }}
-        className="max-md:mt-6 ml-3 sm:mt-8"
+        sx={{
+          fontSize: "60px",
+          color: "var(--honey)",
+          border: "ActiveBorder",
+          borderColor: "var(--toastedalmond)",
+          borderStyle: "solid",
+          borderRadius: "20%",
+          background: "var(--oceanslatelight)",
+        }}
+        className="max-md:mt-6 ml-3 sm:mt-7"
       />
     </>
   );
