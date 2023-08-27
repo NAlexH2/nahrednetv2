@@ -1,5 +1,5 @@
 import { styles } from "styles";
-import NRNButton from "./nrnButton";
+import { NRNButton } from "..";
 
 const index: string = "index";
 const skills: string = "skills";

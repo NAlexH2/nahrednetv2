@@ -1,10 +1,10 @@
-import React from "react";
+import React, { MouseEventHandler } from "react";
 import { Button, Box } from "@mui/material";
 
 interface MButtonProps {
   className?: string;
   id?: string;
-  onClick?: () => void;
+  onClick?: MouseEventHandler;
   children?: React.ReactNode;
 }
 

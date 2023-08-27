@@ -1,5 +1,5 @@
-import NavBar from "./navBar";
-import NRNButton from "./nrnButton";
+import NavBar from "./navBar/navBar";
+import NRNButton from "./nrnButtons/nrnButton";
 import NRNImage from "./nrnImage";
 import SystemTimeGreeting from "./systemTimeGreeting";
 import PageHeader from "./pageHeader";
