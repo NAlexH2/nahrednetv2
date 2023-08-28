@@ -95,20 +95,6 @@
   height: auto;
 }
 
-@media (min-width: 1400px) {
-  .shortBioBump {
-    max-width: 540px;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399px) {
-  .shortBioBump {
-    max-width: 480px;
-  }
-  #extendedbio {
-    max-width: 800px;
-  }
-}
-
 @media (max-width: 767px) {
   #imagenavtext {
     font-size: 68px;
@@ -124,7 +110,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
   #imagenavtext {
     display: none;
   }
