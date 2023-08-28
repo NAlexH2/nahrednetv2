@@ -7,10 +7,19 @@ name: Deploy Next.js site to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["dev-NextJS"]
+    # branches: ["dev-NextJS"]
+    # paths:
+    # - components/**
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      branch:
+        description: "The branch to build"
+        required: true
+      environment:
+        description: "The environment to deploy to"
+        required: false
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
