@@ -1,3 +1,4 @@
+import { TechnicalSkills } from "components/ui/skillsElements";
 import React from "react";
 import { styles } from "styles";
 
@@ -9,6 +10,7 @@ export const Skills = () => {
           <h1 className={styles.mynav}>Skills page</h1>
         </text>
       </div>
+      <TechnicalSkills></TechnicalSkills>
     </div>
   );
 };
