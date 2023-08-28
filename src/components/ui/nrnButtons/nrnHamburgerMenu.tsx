@@ -1,16 +1,9 @@
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import { MouseEventHandler } from "react";
 
-interface MButtonProps {
-  className?: string;
-  id?: string;
-  onClick?: MouseEventHandler;
-  children?: React.ReactNode;
-}
-
 export const NRNHamburgerButton = () => {
   return (
-    <>
+    <div className="max-md:pt-6 pl-3 sm:pt-7">
       <MenuOpenIcon
         sx={{
           fontSize: "60px",
@@ -21,9 +14,8 @@ export const NRNHamburgerButton = () => {
           borderRadius: "20%",
           background: "var(--oceanslatelight)",
         }}
-        className="max-md:mt-6 ml-3 sm:mt-7"
       />
-    </>
+    </div>
   );
 };
 
