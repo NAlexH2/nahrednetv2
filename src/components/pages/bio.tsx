@@ -21,18 +21,18 @@ const Bio = () => {
               alt="Alex Harris"
             />
           </div>
-          <text className="flex justify-center md:ml-10">
+          <div className="flex justify-center md:ml-10">
             <BioBegin />
-          </text>
+          </div>
         </div>
-        <text className="flex justify-center max-md:px-10">
-          <text
+        <div className="flex justify-center max-md:px-10">
+          <div
             className="max-w-xl md:max-w-5xl text-justify 
         lg:hidden md:mx-12 mb-4"
           >
             {<FriendsDescribe />}
-          </text>
-        </text>
+          </div>
+        </div>
       </div>
       <div
         className="2xl:px-80 xl:px-44 lg:px-12 

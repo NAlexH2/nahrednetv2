@@ -5,7 +5,7 @@ import { Greeting } from "components/utils";
 
 export const BioBegin = () => {
   return (
-    <text className={`text-justify max-w-xl`}>
+    <div className={`text-justify max-w-xl`}>
       <Greeting />
       My name is{" "}
       <i>
@@ -27,13 +27,13 @@ export const BioBegin = () => {
       </Link>{" "}
       and obtained a Bachelors of Science in Computer Science, and completing a
       minor in Mathematics.
-      <text className="max-lg:hidden">
+      <div className="max-lg:hidden">
         {" "}
         <br />
         <br />
         {<FriendsDescribe />}
-      </text>
-    </text>
+      </div>
+    </div>
   );
 };
 
