@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import styles from "styles/styles.module.css";
-import { Josefin } from "./ui/fonts";
 import { PageHeader } from "./ui/pageHeader";
 import { NavBar, SmNavBar } from "./ui/navBar";
 import { PageRender } from "./utils";
@@ -18,7 +17,7 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
   };
 
   return (
-    <div className={`${styles.container} ${Josefin.className}`}>
+    <div className={styles.container}>
       <Head>
         <title>nah-red.net</title>
         <link rel="nrnlogo" href="images/logo192.png" />
