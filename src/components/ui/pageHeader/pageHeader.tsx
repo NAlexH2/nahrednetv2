@@ -1,4 +1,3 @@
-import { SquarePegTrue } from "../fonts";
 import { NRNButton } from "../nrnButtons";
 import { NRNImage } from "../imageComponents";
 import { styles } from "styles";
@@ -15,9 +14,7 @@ const PageHeader = ({ onUpdate }: NavBarProps) => {
     <header className={"flex justify-center mt-2 max-md:mb-4 max-sm:-ml-6"}>
       <NRNButton onClick={() => onUpdate(index)}>
         <NRNImage id={styles.mynavlogo} src={beard} alt="website logo" />
-        <div className={SquarePegTrue.className} id={styles.imagenavtext}>
-          Alex Harris
-        </div>
+        <div id={styles.imagenavtext}>Alex Harris</div>
       </NRNButton>
     </header>
   );
