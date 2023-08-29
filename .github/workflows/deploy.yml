@@ -21,7 +21,6 @@ on:
         type: choice
         options:
           - dev-NextJS
-          - njs3
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
