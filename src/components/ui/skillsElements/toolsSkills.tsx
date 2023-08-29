@@ -6,12 +6,15 @@ import ListItemText from "@mui/material/ListItemText";
 import { FixedSizeList, ListChildComponentProps } from "react-window";
 
 function renderRow(props: ListChildComponentProps) {
-  const { index, style } = props;
+  const { index } = props;
 
   return (
-    <ListItem style={style} key={index} component="div" disablePadding divider>
-      <ListItemButton color="var(--toastedalmond)">
-        <ListItemText primary={`Item ${index + 1}`} />
+    <ListItem key={index} component="div" disablePadding>
+      <ListItemButton divider>
+        <ListItemText
+          className="flex justify-center py-2"
+          primary={`Item ${index + 1}`}
+        />
       </ListItemButton>
     </ListItem>
   );
@@ -26,13 +29,13 @@ export default function TechnicalSkills() {
         maxWidth: 360,
         bgcolor: "var(--oceanslatelight)",
         border: "ActiveBorder",
-        borderColor: "var(--honey)",
+        borderColor: "var(--toastedalmond)",
         borderStyle: "solid",
         borderRadius: "2%",
+        fontFamily: "inherit",
       }}
     >
       <FixedSizeList
-        className="mt-1 mb-3"
         height={400}
         width={354}
         itemSize={46}
