@@ -3,6 +3,7 @@
   background: var(--oceanslate);
   color: var(--toastedalmond);
   font-size: 17px;
+  font-family: Josefin;
 }
 
 .mynav {
@@ -35,6 +36,7 @@
 #imagenavtext {
   text-decoration: var(--honey) underline;
   color: var(--toastedalmond);
+  font-family: Squarepeg;
   font-size: 100px;
   display: flex;
   align-items: center;

@@ -18,7 +18,21 @@
   }
 }
 
+@font-face {
+  font-family: "Josefin";
+  src: url("../../public/fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf");
+  src: url("../../public/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+  style: "normal" "italic";
+}
+
+@font-face {
+  font-family: "Squarepeg";
+  src: url("../../public/fonts/Square_Peg/SquarePeg-Regular.ttf");
+}
+
 :root {
+  --Josefin: Josefin;
+  --Squarepeg: Squarepeg;
   --toastedalmond: #eed5bf;
   --transparentalmond: #ffc0896c;
   --white: white;
@@ -27,11 +41,6 @@
   --honey: rgba(255, 196, 0, 0.87);
 }
 
-.MuiListItemButton-root {
-  border-bottom: solid;
-  border-color: var(--honey);
-  border-style: groove;
-}
 body {
   background-color: var(--oceanslate);
 }
@@ -40,10 +49,13 @@ button {
   background-color: unset;
   border: 0px;
 }
-@media (max-width: 767px) {
-  .row > hr {
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 35px;
-  }
+
+.MuiListItemButton-root.MuiListItemButton-divider {
+  border-bottom: 5px;
+  border-style: groove;
+}
+
+.MuiTypography-root.MuiTypography-body1.MuiListItemText-primary {
+  font-size: larger;
+  font-family: var(--Josefin);
 }
