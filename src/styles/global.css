@@ -49,10 +49,17 @@ button {
   background-color: unset;
   border: 0px;
 }
-
-.MuiListItemButton-root.MuiListItemButton-divider {
+.MuiBox-root#MyMuiListBox {
+  background-color: var(--toastedalmond);
+  color: black;
+  border-style: solid;
+  border-color: var(--honey);
+  border-width: 2px;
+}
+.MuiListItem-root.MuiListItem-divider {
   border-bottom: 5px;
   border-style: groove;
+  border-color: var(--honey);
 }
 
 .MuiTypography-root.MuiTypography-body1.MuiListItemText-primary {
