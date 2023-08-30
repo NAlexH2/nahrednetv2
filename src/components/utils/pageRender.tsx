@@ -1,13 +1,13 @@
 import React from "react";
 import { Index, Skills, Projects, Contact } from "components/pages";
 
-const index: string = "index";
-const skills: string = "skills";
-const projects: string = "projects";
-const contact: string = "contact";
+const Bio: string = "Bio";
+const skills: string = "Skills";
+const projects: string = "Projects";
+const contact: string = "Contact";
 
 const PageRender = (pageIdent: String) => {
-  if (pageIdent === index) {
+  if (pageIdent === Bio) {
     return <Index />;
   } else if (pageIdent === skills) {
     return <Skills />;
