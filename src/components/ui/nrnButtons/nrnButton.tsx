@@ -3,7 +3,8 @@ import { Button, Box } from "@mui/material";
 
 interface MButtonProps {
   className?: string;
-  id?: string;
+  id?: string | undefined;
+  text?: String;
   onClick?: MouseEventHandler;
   children?: React.ReactNode;
 }
@@ -25,6 +26,7 @@ const NRNButton = (prop: MButtonProps) => {
         }}
         disableRipple
       >
+        {prop.text}
         {prop.children}
       </Button>
     </Box>
