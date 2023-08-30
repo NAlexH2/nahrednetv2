@@ -36,7 +36,7 @@ const Bio = () => {
       </div>
       <div
         className="2xl:px-80 xl:px-44 lg:px-12 
-      md:px-12 sm:px-10 max-sm:px-10"
+      md:px-12 sm:px-10 max-sm:px-10 lg:-mt-10"
       >
         <h2 className="2xl:-ml-5 xl:-ml-1 mt-5 mb-4">Past:</h2>
       </div>
