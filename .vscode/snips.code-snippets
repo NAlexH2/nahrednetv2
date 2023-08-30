@@ -1,17 +1,17 @@
 {
-	"React className defaulting to className={`${}`}": {
-		"prefix": "csns",
-		"body": "className={`${1}`}",
-		"description": "React Multi classField creator"
-	},
-	"Export Default": {
-		"prefix": "expd",
-		"body": "export default ${1};",
-		"description": "Create \"export default <insert>\""
-	},
-	"Arrow Function": {
-		"prefix": "excnst",
-		"body": "export const ${1} = () => {\n\treturn (\n\t ${2}\n  );\n};",
-		"description": "Create New Arrow Function"
-	}
+  "React className defaulting to className={`${}`}": {
+    "prefix": "csns",
+    "body": "className={`${1}`}",
+    "description": "React Multi classField creator"
+  },
+  "Export Default": {
+    "prefix": "expd",
+    "body": "export default ${1};",
+    "description": "Create \"export default <insert>\""
+  },
+  "Arrow Function": {
+    "prefix": "excnst",
+    "body": "export const ${1} = () => {\n\treturn (\n\t ${2}\n  );\n};",
+    "description": "Create New Arrow Function"
+  }
 }
