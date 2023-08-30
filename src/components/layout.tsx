@@ -5,23 +5,43 @@ import { PageHeader } from "./ui/pageHeader";
 import { NavBar, SmNavBar } from "./ui/navBar";
 import { PageRender } from "./utils";
 import { PageFooter } from "./ui/pageFooter";
+import { navBarItems } from "./ui/navBar/navItemConsts";
 
-export const siteTitle = "nah-red.net";
-
-const index: string = "index";
+const siteTitle = "nah-red.net";
+const logo = "images/logo192.png";
+const favicon = "images/favicon.png";
 
 export default function Layout({ children }: { children?: React.ReactNode }) {
-  const [currentPage, setCurrentPage] = useState(index);
+  const [currentPage, setCurrentPage] = useState(navBarItems[0]);
   const updateParentState = (newPage: string) => {
     setCurrentPage(newPage);
   };
 
+  //Building the nav bar and updating its style depending on active page
+  function barBuilder() {
+    // return a particular style depending on the page currently on
+    const updateCurrentNavStyle = (toChange: string) => {
+      return currentPage === toChange ? styles.currentnav : styles.navtext;
+    };
+    //Return a map of buttons from my array, using the style depending on
+    // the currently selected one.
+    return navBarItems.map((item, index) => (
+      <NavBar
+        key={index}
+        onUpdate={updateParentState}
+        thisPage={item}
+        id={updateCurrentNavStyle(item)}
+      />
+    ));
+  }
+
+  //The layout actually being rendered
   return (
     <div className={styles.container}>
       <Head>
-        <title>nah-red.net</title>
-        <link rel="nrnlogo" href="images/logo192.png" />
-        <link rel="icon" href="images/favicon.png" />
+        <title>{siteTitle}</title>
+        <link rel="nrnlogo" href={logo} />
+        <link rel="icon" href={favicon} />
       </Head>
 
       <div className="flex justify-center">
@@ -30,11 +50,13 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
           {<SmNavBar onUpdate={updateParentState} thisPage={currentPage} />}
         </div>
       </div>
-      <div className="max-md:hidden">
-        <NavBar onUpdate={updateParentState} thisPage={currentPage} />
-      </div>
+      <nav
+        className={`${styles.mynav} flex justify-center mb-7 ml-7 max-md:hidden`}
+      >
+        {barBuilder()}
+      </nav>
       <main>{children}</main>
-      <span>{PageRender(currentPage)}</span>
+      <span className="">{PageRender(currentPage)}</span>
       <div>{<PageFooter />}</div>
     </div>
   );
