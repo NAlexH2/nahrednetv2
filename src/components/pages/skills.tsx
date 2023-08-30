@@ -19,20 +19,25 @@ export const Skills = () => {
       </div>
       <li className="flex justify-center">
         <div className="pr-2">
+          Languages
           <SkillsBox listedItems={knownLangs} />
         </div>
         <div className="pr-2">
+          Tools
           <SkillsBox listedItems={knownTools} />
         </div>
         <div>
+          Soft Skills
           <SkillsBox listedItems={softSkills} />
         </div>
       </li>
       <li className="flex justify-center mt-4">
         <div className="pr-2">
+          Technical Skills
           <SkillsBox listedItems={hardSkills} />
         </div>
         <div>
+          Courses Completed
           <SkillsBox listedItems={completedCourses} />
         </div>
       </li>
