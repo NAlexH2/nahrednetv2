@@ -37,11 +37,16 @@ export const Skills = () => {
     return boxes;
   }
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto ">
       <div className="md:flex justify-center md:mx-12 mb-7 max-md:px-10">
         <h1 className={styles.mynav}>Skills page</h1>
       </div>
-      <List className="flex-box justify-center">{skillsBoxBuilder()}</List>
+
+      {/* <div className="content-center"> convert to invis column/padding*/}
+      <List className="grid grid-cols-3 content-center">
+        {skillsBoxBuilder()}
+      </List>
+      {/* </div> */}
     </div>
   );
 };
