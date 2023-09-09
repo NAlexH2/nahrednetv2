@@ -49,7 +49,7 @@ export const softSkills = [
   "Leadership",
 ];
 
-export const hardSkills = [
+export const technicalSkills = [
   "Programming Languages",
   "REST API",
   "DevOps",
