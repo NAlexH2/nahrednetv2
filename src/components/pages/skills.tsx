@@ -9,6 +9,14 @@ import {
   completedCourses,
 } from "components/ui/skillsElements/skillsLists";
 
+const skillsGroupsList = [
+  knownLangs,
+  knownTools,
+  softSkills,
+  hardSkills,
+  completedCourses,
+];
+
 export const Skills = () => {
   return (
     <div className="container mx-auto">

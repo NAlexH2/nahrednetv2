@@ -22,7 +22,7 @@ export default function SkillsBox({ listedItems }: ItemsList) {
         divider={isLastItem ? false : true}
       >
         <ListItemText
-          className="flex justify-center py-2 text-center"
+          className="flex justify-center py-2 px-1 text-center"
           primary={`${listedItems[index]}`}
         />
       </ListItem>
@@ -33,20 +33,19 @@ export default function SkillsBox({ listedItems }: ItemsList) {
     <Box
       sx={{
         width: "100%",
-        height: 410,
-        maxWidth: 360,
+        height: 310,
+        maxWidth: 280,
         bgcolor: "var(--oceanslatelight)",
-        border: "ActiveBorder",
         borderStyle: "solid",
         borderRadius: "2%",
-        fontFamily: "inherit",
+        fontSize: "14px",
       }}
-      id="MyMuiListBox"
+      id="MyMuiListBox" //located in global css to assist in specificity id
     >
       <FixedSizeList
-        height={400}
-        width={350}
-        itemSize={75.6}
+        height={300}
+        width={270}
+        itemSize={55.6}
         itemCount={listedItems.length}
         overscanCount={4}
       >
