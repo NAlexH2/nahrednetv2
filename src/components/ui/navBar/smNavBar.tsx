@@ -4,13 +4,10 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import { styles } from "styles";
 import { NRNButton, NRNHamburgerButton } from "../nrnButtons";
+import { navBarItems } from "./navItemConsts";
+import { NavBar } from ".";
 
 type Anchor = "left";
-
-const index: string = "index";
-const skills: string = "skills";
-const projects: string = "projects";
-const contact: string = "contact";
 
 interface NavBarProps {
   onUpdate: (data: string) => void;
@@ -18,45 +15,27 @@ interface NavBarProps {
 }
 
 export default function SmNavBar({ onUpdate, thisPage }: NavBarProps) {
-  const updateCurrentNavStyle = (toChange: string) => {
-    return thisPage === toChange ? styles.currentnav : styles.navtext;
-  };
   const [state, setState] = React.useState({
     left: false,
   });
 
-  const navButtons = (
-    <nav className={`${styles.mynav} text-center`}>
-      <NRNButton
+  function barBuilder() {
+    // return a particular style depending on the page currently on
+    const updateCurrentNavStyle = (toChange: string) => {
+      return thisPage === toChange ? styles.currentnav : styles.navtext;
+    };
+    //Return a map of buttons from my array, using the style depending on
+    // the currently selected one.
+    return navBarItems.map((item, index) => (
+      <NavBar
+        key={index}
+        onUpdate={onUpdate}
+        thisPage={item}
         className="mx-5 my-8"
-        id={updateCurrentNavStyle(index)}
-        onClick={() => onUpdate(index)}
-      >
-        Bio
-      </NRNButton>
-      <NRNButton
-        className="mx-5 my-8"
-        id={updateCurrentNavStyle(skills)}
-        onClick={() => onUpdate(skills)}
-      >
-        Skills
-      </NRNButton>
-      <NRNButton
-        className="mx-5 my-8"
-        id={updateCurrentNavStyle(projects)}
-        onClick={() => onUpdate(projects)}
-      >
-        Projects
-      </NRNButton>
-      <NRNButton
-        className="mx-5 my-8"
-        id={updateCurrentNavStyle(contact)}
-        onClick={() => onUpdate(contact)}
-      >
-        Contact
-      </NRNButton>
-    </nav>
-  );
+        id={updateCurrentNavStyle(item)}
+      />
+    ));
+  }
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
@@ -79,7 +58,7 @@ export default function SmNavBar({ onUpdate, thisPage }: NavBarProps) {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>{navButtons}</List>
+      <List className={`${styles.mynav} text-center`}>{barBuilder()}</List>
     </Box>
   );
 
