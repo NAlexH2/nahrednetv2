@@ -44,9 +44,9 @@ jobs:
       - name: Switch to selected branch
         run: git fetch --all && git checkout ${{ github.event.inputs.branch }}
       - name: Install dependencies
-        run: npm ci
+        run: bun i
       - name: Build with Next.js
-        run: npm run deploy
+        run: bun run deploy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
