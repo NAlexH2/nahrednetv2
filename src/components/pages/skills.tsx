@@ -11,6 +11,8 @@ import { List, ListItem } from "@mui/material";
 import { styles } from "styles";
 import SkillsBox from "components/ui/skillsElements/skillsBox";
 import AnimateTx from "components/utils/animateTx";
+import { WorkHistory } from "@mui/icons-material";
+import PriorWork from "components/ui/skillsElements/priorWork";
 
 const skillsGroupsList: [string, string[]][] = [
   ["Languages", knownLangs],
@@ -51,6 +53,9 @@ export const Skills = () => {
           <List className="overflow-y-auto SkillsBoxContainer">
             {skillsBoxBuilder()}
           </List>
+          <div className="flex justify-center md:mx-12 mb-7 max-md:px-10">
+            <PriorWork></PriorWork>
+          </div>
         </div>
       </div>
     </AnimateTx>
