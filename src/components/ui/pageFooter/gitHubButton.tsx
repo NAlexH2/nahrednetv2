@@ -1,6 +1,6 @@
 import { NRNButton } from "../nrnButtons";
 import { NRNImage } from "../imageComponents";
-import GitHub from "/public/images/github.svg";
+import GitHub from "images/github.svg";
 import Link from "next/link";
 export const GitHubButton = () => {
   return (

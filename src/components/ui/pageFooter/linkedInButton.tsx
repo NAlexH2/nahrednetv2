@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { NRNImage } from "../imageComponents";
-import LinkedIn from "/public/images/linkedin.svg";
+import LinkedIn from "images/linkedin.svg";
 export const LinkedInButton = () => {
   return (
     <div>

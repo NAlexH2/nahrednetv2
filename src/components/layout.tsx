@@ -9,8 +9,8 @@ import { navBarItems } from "./ui/navBar/navItemConsts";
 import AnimateTx from "./utils/animateTx";
 
 const siteTitle = "nah-red.net";
-const logo = "images/logo192.png";
-const favicon = "images/favicon.png";
+const logo = "../images/logo192.png";
+const favicon = "../images/favicon.png";
 
 export default function Layout({ children }: { children?: React.ReactNode }) {
   const [currentPage, setCurrentPage] = useState(navBarItems[0]);
