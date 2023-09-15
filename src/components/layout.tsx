@@ -41,6 +41,8 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
     <div className={styles.container}>
       <Head>
         <title>{siteTitle}</title>
+        <link rel="nrnlogo" href={logo} />
+        <link rel="icon" href={favicon} />
       </Head>
       <AnimateTx>
         <div className="flex justify-center">
