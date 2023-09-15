@@ -20,14 +20,14 @@
 
 @font-face {
   font-family: "Josefin";
-  src: url("../fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf");
-  src: url("../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+  src: url("../../public/fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf");
+  src: url("../../public/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
   style: "normal" "italic";
 }
 
 @font-face {
   font-family: "Squarepeg";
-  src: url("../fonts/Square_Peg/SquarePeg-Regular.ttf");
+  src: url("../../public/fonts/Square_Peg/SquarePeg-Regular.ttf");
 }
 
 :root {

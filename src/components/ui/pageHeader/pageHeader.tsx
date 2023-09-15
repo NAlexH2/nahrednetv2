@@ -1,7 +1,7 @@
 import { NRNButton } from "../nrnButtons";
 import { NRNImage } from "../imageComponents";
 import { styles } from "styles";
-import beard from "images/beard.svg";
+import beard from "/public/images/beard.svg";
 
 interface NavBarProps {
   onUpdate: (data: string) => void;
