@@ -47,9 +47,9 @@ jobs:
         run: git fetch --all && git checkout ${{ github.event.inputs.branch }}
       - name: Install bun runtime
         run: curl -fsSL https://bun.sh/install | bash
-      - name: Install dependencies
+      - name: Install dependencies using Bun runtime
         run: bun i
-      - name: Build with Next.js
+      - name: Build with Next.js using Bun runtime
         run: bun run deploy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
