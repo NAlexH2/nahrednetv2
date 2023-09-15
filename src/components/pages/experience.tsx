@@ -11,7 +11,6 @@ import { List, ListItem } from "@mui/material";
 import { styles } from "styles";
 import SkillsBox from "components/ui/skillsElements/skillsBox";
 import AnimateTx from "components/utils/animateTx";
-import { WorkHistory } from "@mui/icons-material";
 import PriorWork from "components/ui/skillsElements/priorWork";
 
 const skillsGroupsList: [string, string[]][] = [
@@ -22,7 +21,7 @@ const skillsGroupsList: [string, string[]][] = [
   ["Completed Courses", completedCourses],
 ];
 
-export const Skills = () => {
+export const Experience = () => {
   function skillsBoxBuilder() {
     let boxes = [];
     for (let i = 0; i < skillsGroupsList.length; ++i) {
@@ -62,4 +61,4 @@ export const Skills = () => {
   );
 };
 
-export default Skills;
+export default Experience;

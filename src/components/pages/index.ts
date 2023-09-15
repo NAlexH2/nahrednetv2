@@ -1,6 +1,6 @@
 import Bio from "./bio";
-import Skills from "./skills";
+import Experience from "./experience";
 import Projects from "./projects";
 import Contact from "./contact";
 
-export { Bio as Index, Skills, Projects, Contact };
+export { Bio as Index, Experience, Projects, Contact };

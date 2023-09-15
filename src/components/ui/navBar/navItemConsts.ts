@@ -1,3 +1,3 @@
-const navBarItems: string[] = ["Bio", "Skills", "Projects", "Contact"];
+const navBarItems: string[] = ["Bio", "Experience", "Projects", "Contact"];
 
 export { navBarItems };
