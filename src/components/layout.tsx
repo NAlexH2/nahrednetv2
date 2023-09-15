@@ -6,6 +6,7 @@ import { NavBar, SmNavBar } from "./ui/navBar";
 import { PageRender } from "./utils";
 import { PageFooter } from "./ui/pageFooter";
 import { navBarItems } from "./ui/navBar/navItemConsts";
+import AnimateTx from "./utils/animateTx";
 
 const siteTitle = "nah-red.net";
 const logo = "images/logo192.png";
@@ -43,18 +44,19 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
         <link rel="nrnlogo" href={logo} />
         <link rel="icon" href={favicon} />
       </Head>
-
-      <div className="flex justify-center">
-        <PageHeader onUpdate={updateParentState} />
-        <div className="md:hidden visible">
-          {<SmNavBar onUpdate={updateParentState} thisPage={currentPage} />}
+      <AnimateTx>
+        <div className="flex justify-center">
+          <PageHeader onUpdate={updateParentState} />
+          <div className="md:hidden visible">
+            {<SmNavBar onUpdate={updateParentState} thisPage={currentPage} />}
+          </div>
         </div>
-      </div>
-      <nav
-        className={`${styles.mynav} flex justify-center mb-7 ml-7 max-md:hidden`}
-      >
-        {barBuilder()}
-      </nav>
+        <nav
+          className={`${styles.mynav} flex justify-center mb-7 ml-7 max-md:hidden`}
+        >
+          {barBuilder()}
+        </nav>
+      </AnimateTx>
       <main>{children}</main>
       <span className="">{PageRender(currentPage)}</span>
       <div>{<PageFooter />}</div>
