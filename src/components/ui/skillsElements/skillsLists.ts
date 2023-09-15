@@ -27,6 +27,7 @@ export const knownTools = [
   "NodeJS",
   "React",
   "ExpressJS",
+  "Bun JS Runtime",
 ];
 
 export const softSkills = [
