@@ -9,6 +9,9 @@ interface ItemsList {
 }
 
 export default function SkillsBox({ listedItems }: ItemsList) {
+  const itemHeight = 55.6;
+  const boxHeight = itemHeight * listedItems.length + 10;
+
   function renderRow(props: ListChildComponentProps) {
     const { index, style } = props;
     const isLastItem = index === listedItems.length - 1;
@@ -33,21 +36,21 @@ export default function SkillsBox({ listedItems }: ItemsList) {
     <Box
       sx={{
         width: "100%",
-        height: 310,
+        height: boxHeight,
         maxWidth: 280,
-        bgcolor: "var(--oceanslatelight)",
         borderStyle: "solid",
         borderRadius: "2%",
         fontSize: "14px",
+        display: "flex",
+        justifyContent: "center",
       }}
-      id="MyMuiListBox" //located in global css to assist in specificity id
+      id="MyMuiListBox" //located in global css to assist in element specificity
     >
       <FixedSizeList
-        height={300}
+        height={boxHeight}
         width={270}
-        itemSize={55.6}
+        itemSize={itemHeight}
         itemCount={listedItems.length}
-        overscanCount={4}
       >
         {renderRow}
       </FixedSizeList>
