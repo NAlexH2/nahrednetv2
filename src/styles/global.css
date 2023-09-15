@@ -46,8 +46,8 @@ body {
 }
 
 button {
-  background-color: unset;
-  border: 0px;
+  background-color: transparent;
+  border: none;
 }
 .MuiBox-root#MyMuiListBox {
   background-color: var(--toastedalmond);
@@ -55,7 +55,9 @@ button {
   border-style: solid;
   border-color: var(--honey);
   border-width: 2px;
+  scrollbar-width: none;
 }
+
 .MuiListItem-root.MuiListItem-divider {
   border-bottom: 5px;
   border-style: groove;
@@ -65,4 +67,28 @@ button {
 .MuiTypography-root.MuiTypography-body1.MuiListItemText-primary {
   font-size: larger;
   font-family: var(--Josefin);
+}
+
+.SkillsBoxContainer {
+  border-style: solid;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-color: var(--oceanslatelight);
+  height: 400px;
+  width: 320px;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 100vw;
+  margin-block: 0.1em;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--toastedalmond);
+  border: solid var(--honey) 2px;
+  border-radius: 100vw;
 }
