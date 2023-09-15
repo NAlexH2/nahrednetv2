@@ -11,7 +11,8 @@ import { List, ListItem } from "@mui/material";
 import { styles } from "styles";
 import SkillsBox from "components/ui/skillsElements/skillsBox";
 import AnimateTx from "components/utils/animateTx";
-import PriorWork from "components/ui/skillsElements/priorWork";
+import WorkAccordion from "components/ui/skillsElements/workAccordion";
+import accordionData from "components/ui/skillsElements/accordionData";
 
 const skillsGroupsList: [string, string[]][] = [
   ["Languages", knownLangs],
@@ -45,16 +46,24 @@ export const Experience = () => {
     <AnimateTx>
       <div className="container mx-auto">
         <div className="flex justify-center md:mx-12 mb-7 max-md:px-10">
-          <h1 className={styles.mynav}>Skills page</h1>
-        </div>
-        <div className="flex justify-center md:mx-12 mb-7 max-md:px-10">
           {/* <div className="content-center"> convert to invis column/padding*/}
-          <List className="overflow-y-auto SkillsBoxContainer">
-            {skillsBoxBuilder()}
-          </List>
-          <div className="flex justify-center md:mx-12 mb-7 max-md:px-10">
-            <PriorWork></PriorWork>
+
+          <div className="flex justify-center">
+            <div className="md:mx-12 mb-7 max-md:px-10">
+              <h1 className={`${styles.mynav} flex justify-center pb-2`}>
+                Skills
+              </h1>
+              <List className="overflow-y-auto SkillsBoxContainer">
+                {skillsBoxBuilder()}
+              </List>
+            </div>
           </div>
+          <div className="flex justify-center md:mx-12 mb-7 max-md:px-10 max-lg:hidden">
+            <WorkAccordion sections={accordionData} />
+          </div>
+        </div>
+        <div className="flex justify-center md:mx-12 mb-7 max-md:px-10 lg:hidden">
+          <WorkAccordion sections={accordionData} />
         </div>
       </div>
     </AnimateTx>
