@@ -42,14 +42,16 @@ export const Skills = () => {
   }
   return (
     <AnimateTx>
-      <div className="container mx-auto ">
-        <div className="md:flex justify-center md:mx-12 mb-7 max-md:px-10">
+      <div className="container mx-auto">
+        <div className="flex justify-center md:mx-12 mb-7 max-md:px-10">
           <h1 className={styles.mynav}>Skills page</h1>
         </div>
-        {/* <div className="content-center"> convert to invis column/padding*/}
-        <List className="overflow-y-auto SkillsBoxContainer">
-          {skillsBoxBuilder()}
-        </List>
+        <div className="flex justify-center md:mx-12 mb-7 max-md:px-10">
+          {/* <div className="content-center"> convert to invis column/padding*/}
+          <List className="overflow-y-auto SkillsBoxContainer">
+            {skillsBoxBuilder()}
+          </List>
+        </div>
       </div>
     </AnimateTx>
   );
