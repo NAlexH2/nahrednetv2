@@ -43,8 +43,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Switch to selected branch
         run: git fetch --all && git checkout ${{ github.event.inputs.branch }}
-      - name: install bun runtime
-        run: npm install -g bun
+      - name: Install bun runtime
+        run: curl -fsSL https://bun.sh/install | bash
       - name: Install dependencies
         run: bun i
       - name: Build with Next.js
