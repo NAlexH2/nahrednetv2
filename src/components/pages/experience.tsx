@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 import {
   knownLangs,
@@ -24,14 +24,13 @@ const skillsGroupsList: [string, string[]][] = [
 
 export const Experience = () => {
   function skillsBoxBuilder() {
-    let boxes = [];
-    for (let i = 0; i < skillsGroupsList.length; ++i) {
-      const groupListName: string = skillsGroupsList[i][0];
-      const listOfSkills: string[] = skillsGroupsList[i][1];
+    const boxes = skillsGroupsList.map((group, i) => {
+      const groupListName: string = group[0];
+      const listOfSkills: string[] = group[1];
 
-      boxes.push(
-        <ListItem>
-          <div className="pl-1.5 pb-5">
+      return (
+        <ListItem key={i}>
+          <div className="pl-2 pb-5">
             <div className="flex justify-center text-3xl pb-2">
               {groupListName}
             </div>
@@ -39,31 +38,44 @@ export const Experience = () => {
           </div>
         </ListItem>
       );
-    }
-    return boxes;
+    });
+
+    return (
+      <>
+        <div className="flex justify-center">
+          <h1 className={`${styles.mynav}pb-2`}>Skills</h1>
+        </div>
+        <div className="flex justify-center">
+          <div className="overflow-y-auto SkillsBoxContainer">{boxes}</div>
+        </div>
+      </>
+    );
   }
+
   return (
     <AnimateTx>
       <div className="container mx-auto">
-        <div className="flex justify-center md:mx-12 mb-7 max-md:px-10">
-          {/* <div className="content-center"> convert to invis column/padding*/}
-
-          <div className="flex justify-center">
-            <div className="md:mx-12 mb-7 max-md:px-10">
-              <h1 className={`${styles.mynav} flex justify-center pb-2`}>
-                Skills
-              </h1>
-              <List className="overflow-y-auto SkillsBoxContainer">
-                {skillsBoxBuilder()}
-              </List>
-            </div>
+        <div
+          className="lg:px-10 md:grid md:grid-cols-24 lg:grid-cols-29
+          xl:grid-cols-30 2xl:grid-cols-18"
+        >
+          <div className="max-xl:hidden xl:col-span-2 2xl:col-span-2" />
+          <div
+            className="max-md:mx-auto md:col-span-10 lg:col-span-10 xl:col-span-8 
+            2xl:col-span-4"
+          >
+            {skillsBoxBuilder()}
           </div>
-          <div className="flex justify-center md:mx-12 mb-7 max-md:px-10 max-lg:hidden">
+          <div
+            className="max-lg:hidden lg:col-span-2 xl:col-span-2
+            2xl:col-span-2"
+          />
+          <div
+            className="max-lg:px-3 max-md:pt-10 max-md:pb-5 md:col-span-14
+            lg:col-span-17 xl:col-span-17 2xl:col-span-9"
+          >
             <WorkAccordion sections={accordionData} />
           </div>
-        </div>
-        <div className="flex justify-center md:mx-12 mb-7 max-md:px-10 lg:hidden">
-          <WorkAccordion sections={accordionData} />
         </div>
       </div>
     </AnimateTx>
