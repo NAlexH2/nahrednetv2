@@ -1,4 +1,5 @@
 export interface AccordionItem {
+  id: number;
   title: string;
   content: string;
   dates: string;
@@ -6,6 +7,7 @@ export interface AccordionItem {
 
 const accordionData: AccordionItem[] = [
   {
+    id: 0,
     title: "Portland State University - Technical Course Support Specialist",
     dates: "April 2021 - Present",
     content: `
@@ -24,6 +26,7 @@ const accordionData: AccordionItem[] = [
     `,
   },
   {
+    id: 1,
     title: "United States Navy - Electronics Technician, 2nd Class (E-5)",
     dates: "February 2012 - February 2020",
     content: `
