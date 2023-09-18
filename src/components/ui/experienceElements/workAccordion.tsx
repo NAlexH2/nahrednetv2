@@ -12,7 +12,7 @@ const AccordionRender = ({ section }: { section: AccordionItem }) => {
   return (
     <div className="p-0.5">
       <div
-        className=" border-[2px] border-black bor w-full xl:text-xl md:text-lg
+        className="border-[2px] border-black bor w-full text-sm sm:text-lg
         focus:outline-none p-4 bg-[var(--toastedalmond)] rounded-lg shadow-md 
         justify-between 
         items-center text-black"
@@ -23,10 +23,11 @@ const AccordionRender = ({ section }: { section: AccordionItem }) => {
     </div>
   );
 };
+
 export const WorkAccordion = ({ sections }: AccordionInf) => {
   const [activeIndex, setActiveIndex] = useState(-1);
   return (
-    <div className="">
+    <>
       <h1 className={`${styles.mynav} flex justify-center pb-2`}>
         Work History
       </h1>
@@ -35,7 +36,7 @@ export const WorkAccordion = ({ sections }: AccordionInf) => {
           <AccordionRender key={index} section={section} />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
