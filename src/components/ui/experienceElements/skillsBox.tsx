@@ -23,10 +23,9 @@ export default function SkillsBox({ listedItems }: ItemsList) {
         component="div"
         disablePadding
         divider={isLastItem ? false : true}
-        className="text-sm sm:text-lg"
       >
         <ListItemText
-          className="flex justify-center py-2 px-1"
+          className="flex justify-center text-center py-2 px-1"
           primary={`${listedItems[index]}`}
         />
       </ListItem>
