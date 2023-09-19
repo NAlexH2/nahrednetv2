@@ -38,7 +38,7 @@
   --white: white;
   --oceanslate: #243f4c;
   --oceanslatelight: #45738a;
-  --honey: rgba(255, 196, 0, 0.87);
+  --honey: rgb(255, 196, 0);
 }
 
 body {
@@ -70,15 +70,25 @@ button {
   font-family: var(--Josefin);
 }
 
+.MuiAccordion-root#WorkHistory {
+  background-color: var(--honey);
+}
+
 .SkillsBoxContainer {
   border-style: solid;
   border-top-width: 4px;
   border-bottom-width: 4px;
   border-color: var(--oceanslatelight);
-  height: 400px;
+  height: 560px;
   width: 320px;
   scrollbar-width: none;
   border-radius: 2rem;
+}
+
+.AccordionHR {
+  border: black solid 2px;
+  max-width: 90%;
+  margin: 40px 100px 40px 100px; /*t r b l*/
 }
 
 ::-webkit-scrollbar {
