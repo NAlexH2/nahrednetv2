@@ -67,12 +67,6 @@
   --bs-btn-hover-border-color: black;
 }
 
-.accordionHR {
-  border: black solid 2px;
-  max-width: 90%;
-  margin: 30px 100px 40px 100px;
-}
-
 #unilink {
   color: var(--white);
   text-decoration: var(--honey) underline;
