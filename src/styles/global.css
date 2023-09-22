@@ -85,6 +85,17 @@ button {
   border-radius: 2rem;
 }
 
+.ProjectListContainer {
+  border-style: solid;
+  border-left-width: 4px;
+  border-right-width: 4px;
+  border-color: var(--oceanslatelight);
+  height: 100px;
+  width: 560px;
+  scrollbar-width: none;
+  border-radius: 2rem;
+}
+
 .AccordionHR {
   border: black solid 2px;
   max-width: 90%;
