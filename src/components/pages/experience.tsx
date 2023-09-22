@@ -24,10 +24,11 @@ const skillsGroupsList: [string, string[]][] = [
 
 export const Experience = () => {
   function skillsBoxBuilder() {
+    // Generate the boxes with all the skills listed in skillsList.ts
+    // with a map.
     const boxes = skillsGroupsList.map((group, i) => {
       const groupListName: string = group[0];
       const listOfSkills: string[] = group[1];
-
       return (
         <ListItem key={i}>
           <div className="pl-2 pb-5">
@@ -40,10 +41,11 @@ export const Experience = () => {
       );
     });
 
+    //
     return (
       <>
         <div className="flex justify-center">
-          <h1 className={`${styles.mynav}pb-2`}>Skills</h1>
+          <h1 className={`${styles.mynav} pb-2`}>Skills</h1>
         </div>
         <div className="flex justify-center">
           <div className="overflow-y-auto SkillsBoxContainer">{boxes}</div>

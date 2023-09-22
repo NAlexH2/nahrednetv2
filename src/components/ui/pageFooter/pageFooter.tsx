@@ -10,7 +10,7 @@ export const PageFooter = () => {
         <GitHubButton />
       </span>
       <span className="flex justify-center">
-        <div className="text-center text-md mt-3 mb-12">
+        <div className="text-center text-md my-3">
           &#169; 2023 Nicholas Alexander Harris
         </div>
       </span>

@@ -11,7 +11,7 @@ const accordionData: AccordionItem[] = [
     title: "Portland State University - Technical Course Support Specialist",
     dates: "April 2021 - Present",
     content: `
-    <div class="px-6 mt-5">
+    <div class="px-6 mt-7">
       Facilitated introductory programming labs into the field of Computer 
       Science for first year students as a peer educator helping students learn
       how to execute their first program to building abstract data types by
