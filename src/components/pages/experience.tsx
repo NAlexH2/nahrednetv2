@@ -6,12 +6,12 @@ import {
   softSkills,
   technicalSkills,
   completedCourses,
-} from "components/ui/pageElements/experienceElements/skillsLists";
+} from "components/ui/pageComponents/experienceElements/skillsLists";
 import {
   accordionData,
   SkillsBox,
   WorkAccordion,
-} from "components/ui/pageElements/experienceElements";
+} from "components/ui/pageComponents/experienceElements";
 import { ListItem } from "@mui/material";
 import { styles } from "styles";
 import AnimateTx from "components/utils/animateTx";
