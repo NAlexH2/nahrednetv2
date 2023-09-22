@@ -1,4 +1,4 @@
-.container {
+.Container {
   font-weight: 400;
   background: var(--oceanslate);
   color: var(--toastedalmond);
@@ -6,34 +6,34 @@
   font-family: Josefin;
 }
 
-.mynav {
+.MyNav {
   font-size: 40px;
   color: var(--toastedalmond);
 }
 
-.mynav #currentnav {
+.MyNav #CurrentNav {
   text-decoration: black underline;
   color: white;
 }
 
-.mynav #navtext {
+.MyNav #NavText {
   text-decoration: var(--honey) underline;
   color: unset;
 }
 
-#mynavlogo {
+#MyNavLogo {
   display: flex;
   margin-right: 20px;
   height: 50px;
   width: auto;
 }
 
-.mynav #navtext:hover {
+.MyNav #NavText:hover {
   text-decoration: var(--toastedalmond) underline;
   color: var(--honey);
 }
 
-#imagenavtext {
+#ImageNavText {
   text-decoration: var(--honey) underline;
   color: var(--toastedalmond);
   font-family: Squarepeg;
@@ -43,12 +43,12 @@
   text-underline-offset: 7px;
 }
 
-#imagenavtext:hover {
+#ImageNavText:hover {
   text-decoration: var(--toastedalmond) underline;
   color: var(--honey);
 }
 
-.headshot {
+.Headshot {
   border: 3px;
   border-radius: 4%;
   border-style: solid;
@@ -56,61 +56,45 @@
   min-width: 200px;
 }
 
-.card {
+.Card {
   --bs-card-bg: black;
   padding: 0%;
 }
 
-.card * .btn-primary {
-  --bs-btn-hover-color: black;
-  --bs-btn-hover-bg: var(--toastedalmond);
-  --bs-btn-hover-border-color: black;
-}
-
-#unilink {
+#UniLink {
   color: var(--white);
   text-decoration: var(--honey) underline;
 }
 
-#unilink:hover {
+#UniLink:hover {
   text-decoration: var(--toastedalmond) underline;
   color: var(--honey);
 }
 
-#currentcons {
+#CurrentCons {
   margin-left: 20px;
   max-width: 300px;
 }
 
-#extendedbio {
-  margin-top: 10px;
-}
-
-#contact-image {
+#ContactImage {
   width: 60px;
   height: auto;
 }
 
 @media (max-width: 767px) {
-  #imagenavtext {
+  #ImageNavText {
     font-size: 68px;
   }
-  .mynav {
+  .MyNav {
     font-size: 2rem;
-  }
-  .border-end {
-    --bs-border-color: null;
-  }
-  .border-start {
-    --bs-border-color: null;
   }
 }
 
 @media (max-width: 639px) {
-  #imagenavtext {
+  #ImageNavText {
     display: none;
   }
-  #mynavlogo {
+  #MyNavLogo {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
