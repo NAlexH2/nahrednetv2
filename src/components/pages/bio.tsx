@@ -7,7 +7,7 @@ import {
   FriendsDescribe,
   PastBio,
   PresentBio,
-} from "components/ui/bioElements";
+} from "components/ui/pageElements/bioElements";
 import AnimateTx from "components/utils/animateTx";
 
 const Bio = () => {

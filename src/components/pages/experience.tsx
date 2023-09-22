@@ -6,13 +6,15 @@ import {
   softSkills,
   technicalSkills,
   completedCourses,
-} from "components/ui/experienceElements/skillsLists";
+} from "components/ui/pageElements/experienceElements/skillsLists";
+import {
+  accordionData,
+  SkillsBox,
+  WorkAccordion,
+} from "components/ui/pageElements/experienceElements";
 import { ListItem } from "@mui/material";
 import { styles } from "styles";
-import SkillsBox from "components/ui/experienceElements/skillsBox";
 import AnimateTx from "components/utils/animateTx";
-import WorkAccordion from "components/ui/experienceElements/workAccordion";
-import accordionData from "components/ui/experienceElements/accordionData";
 
 const skillsGroupsList: [string, string[]][] = [
   ["Languages", knownLangs],
