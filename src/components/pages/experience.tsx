@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 
 import {
   knownLangs,
@@ -7,7 +7,7 @@ import {
   technicalSkills,
   completedCourses,
 } from "components/ui/experienceElements/skillsLists";
-import { List, ListItem } from "@mui/material";
+import { ListItem } from "@mui/material";
 import { styles } from "styles";
 import SkillsBox from "components/ui/experienceElements/skillsBox";
 import AnimateTx from "components/utils/animateTx";
