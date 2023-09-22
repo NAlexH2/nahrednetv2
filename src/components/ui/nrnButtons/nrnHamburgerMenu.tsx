@@ -1,5 +1,4 @@
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import { MouseEventHandler } from "react";
 
 export const NRNHamburgerButton = () => {
   return (

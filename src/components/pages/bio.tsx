@@ -18,7 +18,7 @@ const Bio = () => {
           <div className="md:flex justify-center md:mx-12 mb-7 max-md:px-10">
             <div className="justify-center max-md:flex">
               <NRNImage
-                className={`${styles.headshot} max-h-80 w-auto max-md:mb-7`}
+                className={`${styles.Headshot} max-h-80 w-auto max-md:mb-7`}
                 src={Headshot}
                 alt="Alex Harris"
               />

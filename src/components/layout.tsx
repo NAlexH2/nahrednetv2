@@ -22,7 +22,7 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
   function barBuilder() {
     // return a particular style depending on the page currently on
     const updateCurrentNavStyle = (toChange: string) => {
-      return currentPage === toChange ? styles.currentnav : styles.navtext;
+      return currentPage === toChange ? styles.CurrentNav : styles.NavText;
     };
     //Return a map of buttons from my array, using the style depending on
     // the currently selected one.
@@ -38,7 +38,7 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
 
   //The layout actually being rendered
   return (
-    <div className={styles.container}>
+    <div className={styles.Container}>
       <Head>
         <title>{siteTitle}</title>
         <link rel="nrnlogo" href={logo} />
@@ -52,7 +52,7 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
           </div>
         </div>
         <nav
-          className={`${styles.mynav} flex justify-center mb-7 ml-7 max-md:hidden`}
+          className={`${styles.MyNav} flex justify-center mb-7 ml-7 max-md:hidden`}
         >
           {barBuilder()}
         </nav>

@@ -13,7 +13,7 @@ export const BioBegin = () => {
       </i>{" "}
       and I am a Graduate student at{" "}
       <Link href="https://www.pdx.edu/" legacyBehavior>
-        <a id={styles.unilink} target="_blank" rel="noopener noreferrer">
+        <a id={styles.UniLink} target="_blank" rel="noopener noreferrer">
           Portland State University
         </a>
       </Link>
@@ -21,7 +21,7 @@ export const BioBegin = () => {
       <br />
       <br />I have completed my Undergrad program at the{" "}
       <Link href="https://www.pdx.edu/engineering/" legacyBehavior>
-        <a id={styles.unilink} target="_blank" rel="noopener noreferrer">
+        <a id={styles.UniLink} target="_blank" rel="noopener noreferrer">
           Maseeh College of Engineering and Computer Science
         </a>
       </Link>{" "}

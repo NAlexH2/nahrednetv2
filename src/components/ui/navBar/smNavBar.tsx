@@ -22,7 +22,7 @@ export default function SmNavBar({ onUpdate, thisPage }: NavBarProps) {
   function barBuilder() {
     // return a particular style depending on the page currently on
     const updateCurrentNavStyle = (toChange: string) => {
-      return thisPage === toChange ? styles.currentnav : styles.navtext;
+      return thisPage === toChange ? styles.CurrentNav : styles.NavText;
     };
     //Return a map of buttons from my array, using the style depending on
     // the currently selected one.
@@ -58,7 +58,7 @@ export default function SmNavBar({ onUpdate, thisPage }: NavBarProps) {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List className={`${styles.mynav} text-center`}>{barBuilder()}</List>
+      <List className={`${styles.MyNav} text-center`}>{barBuilder()}</List>
     </Box>
   );
 

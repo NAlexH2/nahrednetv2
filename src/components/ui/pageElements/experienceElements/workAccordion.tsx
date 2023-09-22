@@ -1,16 +1,11 @@
-import { Dispatch, SetStateAction, useState } from "react";
+import { useState } from "react";
 import { AccordionItem } from "./accordionData";
-import { AnimatePresence, motion as Motion } from "framer-motion";
-import { ArrowUpward, ArrowDownward } from "@mui/icons-material";
 import { styles } from "styles";
-import { NRNButton } from "../nrnButtons";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Theme, duration } from "@mui/material";
-import AnimateTx from "components/utils/animateTx";
 
 interface AccordionInf {
   sections: AccordionItem[];
@@ -60,7 +55,7 @@ export const WorkAccordion = ({ sections }: AccordionInf) => {
   // Return the component based on all the above logic
   return (
     <>
-      <h1 className={`${styles.mynav} flex justify-center pb-2`}>
+      <h1 className={`${styles.MyNav} flex justify-center pb-2`}>
         Work History
       </h1>
       {sections.map((section, index) => (

@@ -47,7 +47,7 @@ export const Experience = () => {
     return (
       <>
         <div className="flex justify-center">
-          <h1 className={`${styles.mynav} pb-2`}>Skills</h1>
+          <h1 className={`${styles.MyNav} pb-2`}>Skills</h1>
         </div>
         <div className="flex justify-center">
           <div className="overflow-y-auto SkillsBoxContainer">{boxes}</div>
