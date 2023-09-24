@@ -1,3 +1,3 @@
-import ProjectNav from "./projectNav";
+import ProjectsDisplay from "./projectsDisplay";
 
-export { ProjectNav };
+export { ProjectsDisplay };
