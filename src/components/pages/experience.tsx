@@ -50,7 +50,7 @@ export const Experience = () => {
           <h1 className={`${ClassStyles.MyNav} pb-2`}>Skills</h1>
         </div>
         <div className="flex justify-center">
-          <div className={`${ClassStyles.SkillsBoxContainer} overflow-y-auto`}>
+          <div className={`${ClassStyles.MyBoxContainer} overflow-y-auto`}>
             {boxes}
           </div>
         </div>
