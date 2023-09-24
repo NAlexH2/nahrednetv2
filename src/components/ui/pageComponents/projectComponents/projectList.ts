@@ -1,7 +1,7 @@
 export const projectLists = [
-  "nah-red.net (NextJS/TypeScript)",
-  "nah-red.net (HTML/JavaScript)",
-  "SAFE - System for Anonymous Feedback",
-  "Phone Bill Manager (Android App)",
-  "HaskellGo (Haskell)",
+  "nah-red.net v2",
+  "nah-red.net v1",
+  "SAFE",
+  "Phone Bill Manager",
+  "HaskellGo",
 ];
