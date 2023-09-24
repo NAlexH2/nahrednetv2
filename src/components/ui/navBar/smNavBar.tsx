@@ -2,8 +2,8 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
-import { styles } from "styles";
-import { NRNButton, NRNHamburgerButton } from "../nrnButtons";
+import { ClassStyles } from "styles";
+import { NavButton, NRNHamburgerButton } from "../nrnButtons";
 import { navBarItems } from "./navItemConsts";
 import { NavBar } from ".";
 
@@ -22,7 +22,9 @@ export default function SmNavBar({ onUpdate, thisPage }: NavBarProps) {
   function barBuilder() {
     // return a particular style depending on the page currently on
     const updateCurrentNavStyle = (toChange: string) => {
-      return thisPage === toChange ? styles.CurrentNav : styles.NavText;
+      return thisPage === toChange
+        ? ClassStyles.CurrentNav
+        : ClassStyles.NavText;
     };
     //Return a map of buttons from my array, using the style depending on
     // the currently selected one.
@@ -58,7 +60,7 @@ export default function SmNavBar({ onUpdate, thisPage }: NavBarProps) {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List className={`${styles.MyNav} text-center`}>{barBuilder()}</List>
+      <List className={`${ClassStyles.MyNav} text-center`}>{barBuilder()}</List>
     </Box>
   );
 
@@ -66,9 +68,9 @@ export default function SmNavBar({ onUpdate, thisPage }: NavBarProps) {
     <div>
       {
         <>
-          <NRNButton onClick={toggleDrawer("left", true)}>
+          <NavButton onClick={toggleDrawer("left", true)}>
             {<NRNHamburgerButton />}
-          </NRNButton>
+          </NavButton>
           <Drawer
             PaperProps={{
               sx: {

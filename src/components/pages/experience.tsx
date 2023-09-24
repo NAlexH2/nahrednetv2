@@ -13,7 +13,7 @@ import {
   WorkAccordion,
 } from "components/ui/pageComponents/experienceComponents";
 import { ListItem } from "@mui/material";
-import { styles } from "styles";
+import { ClassStyles } from "styles";
 import AnimateTx from "components/utils/animateTx";
 
 const skillsGroupsList: [string, string[]][] = [
@@ -47,7 +47,7 @@ export const Experience = () => {
     return (
       <>
         <div className="flex justify-center">
-          <h1 className={`${styles.MyNav} pb-2`}>Skills</h1>
+          <h1 className={`${ClassStyles.MyNav} pb-2`}>Skills</h1>
         </div>
         <div className="flex justify-center">
           <div className="overflow-y-auto SkillsBoxContainer">{boxes}</div>

@@ -1,3 +1,4 @@
-import styles from "./styles.module.css";
+import ClassStyles from "./ClassStyles.module.css";
+import IDStyles from "./IDStyles.module.css";
 
-export { styles };
+export { ClassStyles, IDStyles };

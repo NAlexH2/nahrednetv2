@@ -1,6 +1,6 @@
-import { NRNButton } from "../nrnButtons";
+import { NavButton } from "../nrnButtons";
 import { NRNImage } from "../imageComponents";
-import { styles } from "styles";
+import { IDStyles } from "styles";
 import beard from "/public/images/beard.svg";
 
 interface NavBarProps {
@@ -10,10 +10,10 @@ interface NavBarProps {
 const PageHeader = ({ onUpdate }: NavBarProps) => {
   return (
     <header className={"flex justify-center max-md:mb-4 max-sm:-ml-6"}>
-      <NRNButton onClick={() => onUpdate("Bio")}>
-        <NRNImage id={styles.MyNavLogo} src={beard} alt="website logo" />
-        <div id={styles.ImageNavText}>Alex Harris</div>
-      </NRNButton>
+      <NavButton onClick={() => onUpdate("Bio")}>
+        <NRNImage id={IDStyles.MyNavLogo} src={beard} alt="website logo" />
+        <div id={IDStyles.ImageNavText}>Alex Harris</div>
+      </NavButton>
     </header>
   );
 };

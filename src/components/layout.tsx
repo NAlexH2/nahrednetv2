@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import styles from "styles/styles.module.css";
+import { ClassStyles } from "styles";
 import { PageHeader } from "./ui/pageHeader";
 import { NavBar, SmNavBar } from "./ui/navBar";
 import { PageRender } from "./utils";
@@ -22,7 +22,9 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
   function barBuilder() {
     // return a particular style depending on the page currently on
     const updateCurrentNavStyle = (toChange: string) => {
-      return currentPage === toChange ? styles.CurrentNav : styles.NavText;
+      return currentPage === toChange
+        ? ClassStyles.CurrentNav
+        : ClassStyles.NavText;
     };
     //Return a map of buttons from my array, using the style depending on
     // the currently selected one.
@@ -38,7 +40,7 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
 
   //The layout actually being rendered
   return (
-    <div className={styles.Container}>
+    <div className={ClassStyles.Container}>
       <Head>
         <title>{siteTitle}</title>
         <link rel="nrnlogo" href={logo} />
@@ -52,7 +54,7 @@ export default function Layout({ children }: { children?: React.ReactNode }) {
           </div>
         </div>
         <nav
-          className={`${styles.MyNav} flex justify-center mb-7 ml-7 max-md:hidden`}
+          className={`${ClassStyles.MyNav} flex justify-center mb-7 ml-7 max-md:hidden`}
         >
           {barBuilder()}
         </nav>

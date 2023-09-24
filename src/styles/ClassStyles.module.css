@@ -1,0 +1,41 @@
+.Container {
+  font-weight: 400;
+  background: var(--oceanslate);
+  color: var(--toastedalmond);
+  font-size: 17px;
+  font-family: Josefin;
+}
+
+.MyNav {
+  font-size: 40px;
+  color: var(--toastedalmond);
+}
+
+.MyNav #CurrentNav {
+  text-decoration: black underline;
+  color: white;
+}
+
+.MyNav #NavText {
+  text-decoration: var(--honey) underline;
+  color: unset;
+}
+
+.MyNav #NavText:hover {
+  text-decoration: var(--toastedalmond) underline;
+  color: var(--honey);
+}
+
+.Headshot {
+  border: 3px;
+  border-radius: 4%;
+  border-style: solid;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+@media (max-width: 767px) {
+  .MyNav {
+    font-size: 2rem;
+  }
+}

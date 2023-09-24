@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AccordionItem } from "./accordionData";
-import { styles } from "styles";
+import { ClassStyles } from "styles";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -55,7 +55,7 @@ export const WorkAccordion = ({ sections }: AccordionInf) => {
   // Return the component based on all the above logic
   return (
     <>
-      <h1 className={`${styles.MyNav} flex justify-center pb-2`}>
+      <h1 className={`${ClassStyles.MyNav} flex justify-center pb-2`}>
         Work History
       </h1>
       {sections.map((section, index) => (

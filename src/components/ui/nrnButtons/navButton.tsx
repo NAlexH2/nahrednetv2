@@ -9,7 +9,7 @@ interface MButtonProps {
   children?: React.ReactNode;
 }
 
-const NRNButton = (prop: MButtonProps) => {
+const NavButton = (prop: MButtonProps) => {
   return (
     <Box className={prop.className}>
       <Button
@@ -33,4 +33,4 @@ const NRNButton = (prop: MButtonProps) => {
   );
 };
 
-export default NRNButton;
+export default NavButton;

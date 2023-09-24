@@ -1,4 +1,4 @@
-import { NRNButton } from "../nrnButtons";
+import { NavButton } from "../nrnButtons";
 
 interface NavBarProps {
   onUpdate: (data: string) => void;
@@ -9,7 +9,7 @@ interface NavBarProps {
 const defaultNavBarButtonStyle = "max-md:mr-0.5 md:mr-8";
 export const NavBar = ({ onUpdate, thisPage, id, className }: NavBarProps) => {
   return (
-    <NRNButton
+    <NavButton
       className={className === undefined ? defaultNavBarButtonStyle : className}
       id={id}
       onClick={() => onUpdate(thisPage)}

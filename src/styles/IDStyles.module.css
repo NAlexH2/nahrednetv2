@@ -1,24 +1,11 @@
-.Container {
-  font-weight: 400;
-  background: var(--oceanslate);
-  color: var(--toastedalmond);
-  font-size: 17px;
-  font-family: Josefin;
+#ContactImage {
+  width: 60px;
+  height: auto;
 }
 
-.MyNav {
-  font-size: 40px;
-  color: var(--toastedalmond);
-}
-
-.MyNav #CurrentNav {
-  text-decoration: black underline;
-  color: white;
-}
-
-.MyNav #NavText {
-  text-decoration: var(--honey) underline;
-  color: unset;
+#CurrentCons {
+  margin-left: 20px;
+  max-width: 300px;
 }
 
 #MyNavLogo {
@@ -26,11 +13,6 @@
   margin-right: 20px;
   height: 50px;
   width: auto;
-}
-
-.MyNav #NavText:hover {
-  text-decoration: var(--toastedalmond) underline;
-  color: var(--honey);
 }
 
 #ImageNavText {
@@ -48,19 +30,6 @@
   color: var(--honey);
 }
 
-.Headshot {
-  border: 3px;
-  border-radius: 4%;
-  border-style: solid;
-  min-height: 200px;
-  min-width: 200px;
-}
-
-.Card {
-  --bs-card-bg: black;
-  padding: 0%;
-}
-
 #UniLink {
   color: var(--white);
   text-decoration: var(--honey) underline;
@@ -71,22 +40,9 @@
   color: var(--honey);
 }
 
-#CurrentCons {
-  margin-left: 20px;
-  max-width: 300px;
-}
-
-#ContactImage {
-  width: 60px;
-  height: auto;
-}
-
 @media (max-width: 767px) {
   #ImageNavText {
     font-size: 68px;
-  }
-  .MyNav {
-    font-size: 2rem;
   }
 }
 

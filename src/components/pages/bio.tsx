@@ -1,5 +1,5 @@
 import React from "react";
-import { styles } from "styles";
+import { ClassStyles } from "styles";
 import { NRNImage } from "components/ui/imageComponents";
 import Headshot from "/public/images/hs2-small.jpg";
 import {
@@ -18,7 +18,7 @@ const Bio = () => {
           <div className="md:flex justify-center md:mx-12 mb-7 max-md:px-10">
             <div className="justify-center max-md:flex">
               <NRNImage
-                className={`${styles.Headshot} max-h-80 w-auto max-md:mb-7`}
+                className={`${ClassStyles.Headshot} max-h-80 w-auto max-md:mb-7`}
                 src={Headshot}
                 alt="Alex Harris"
               />
