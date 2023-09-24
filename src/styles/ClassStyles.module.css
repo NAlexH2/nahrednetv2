@@ -6,6 +6,14 @@
   font-family: Josefin;
 }
 
+.Headshot {
+  border: 3px;
+  border-radius: 4%;
+  border-style: solid;
+  min-height: 200px;
+  min-width: 200px;
+}
+
 .MyNav {
   font-size: 40px;
   color: var(--toastedalmond);
@@ -26,12 +34,15 @@
   color: var(--honey);
 }
 
-.Headshot {
-  border: 3px;
-  border-radius: 4%;
+.SkillsBoxContainer {
   border-style: solid;
-  min-height: 200px;
-  min-width: 200px;
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+  border-color: var(--oceanslatelight);
+  height: 560px;
+  width: 320px;
+  scrollbar-width: none;
+  border-radius: 2rem;
 }
 
 @media (max-width: 767px) {

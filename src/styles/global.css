@@ -49,6 +49,13 @@ button {
   background-color: transparent;
   border: none;
 }
+
+.AccordionHR {
+  border: black solid 2px;
+  max-width: 90%;
+  margin: 40px 100px 40px 100px; /*t r b l*/
+}
+
 .MuiBox-root#MyMuiListBox {
   background-color: var(--toastedalmond);
   color: black;
@@ -72,34 +79,6 @@ button {
 
 .MuiAccordion-root#WorkHistory {
   background-color: var(--honey);
-}
-
-.SkillsBoxContainer {
-  border-style: solid;
-  border-top-width: 4px;
-  border-bottom-width: 4px;
-  border-color: var(--oceanslatelight);
-  height: 560px;
-  width: 320px;
-  scrollbar-width: none;
-  border-radius: 2rem;
-}
-
-.ProjectListContainer {
-  border-style: solid;
-  border-left-width: 4px;
-  border-right-width: 4px;
-  border-color: var(--oceanslatelight);
-  height: 100px;
-  width: 560px;
-  scrollbar-width: none;
-  border-radius: 2rem;
-}
-
-.AccordionHR {
-  border: black solid 2px;
-  max-width: 90%;
-  margin: 40px 100px 40px 100px; /*t r b l*/
 }
 
 ::-webkit-scrollbar {

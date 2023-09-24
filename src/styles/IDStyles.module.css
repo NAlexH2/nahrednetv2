@@ -8,13 +8,6 @@
   max-width: 300px;
 }
 
-#MyNavLogo {
-  display: flex;
-  margin-right: 20px;
-  height: 50px;
-  width: auto;
-}
-
 #ImageNavText {
   text-decoration: var(--honey) underline;
   color: var(--toastedalmond);
@@ -28,6 +21,13 @@
 #ImageNavText:hover {
   text-decoration: var(--toastedalmond) underline;
   color: var(--honey);
+}
+
+#MyNavLogo {
+  display: flex;
+  margin-right: 20px;
+  height: 50px;
+  width: auto;
 }
 
 #UniLink {
