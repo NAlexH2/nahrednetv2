@@ -1,8 +1,8 @@
 export const Safe = () => {
   return (
-    <>
-      <div>Safe</div>
-    </>
+    <div className="mx-10 my-5 ">
+      <h2 className="text-center">Safe - System for Anonymous Feedback</h2>
+    </div>
   );
 };
 
