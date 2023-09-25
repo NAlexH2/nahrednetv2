@@ -11,13 +11,16 @@ interface nrnImageProps {
 
 export const NRNImage = (prop: nrnImageProps) => {
   return (
-    <Image
-      className={prop.className}
-      id={prop.id}
-      style={{ color: "inherit" }}
-      src={prop.src}
-      alt={prop.alt}
-    />
+    <div>
+      <Image
+        className={prop.className}
+        id={prop.id}
+        style={{ color: "inherit" }}
+        src={prop.src}
+        alt={prop.alt}
+      />
+      {prop.children}
+    </div>
   );
 };
 
