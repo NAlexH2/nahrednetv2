@@ -7,5 +7,4 @@ The script is really cool too!
 # Primary Packages Used In UI/Layout
 - MaterialUI
 - Tailwind CSS
-- react-awesome-reveal
 - Framer Motion
