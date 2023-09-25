@@ -4,8 +4,8 @@ import { TabsList } from "@mui/base/TabsList";
 import { TabPanel } from "@mui/base/TabPanel";
 import { Tab } from "@mui/base/Tab";
 import projectLists from "./projectList";
-import { Box } from "@mui/material";
 import { ClassStyles } from "styles";
+import { AnimatePresence } from "framer-motion";
 
 function HorizontalButtonBuild() {
   return (
@@ -35,7 +35,7 @@ function GridButtonBuild() {
         <Tab
           key={index}
           value={index + 1}
-          className="md:w-[30%] lg:max-w-[360px] xl:max-w-[220px]"
+          className="md:w-[30%] md:max-w-[220px]"
         >
           <ProjectButton text={project[0]} />
         </Tab>
@@ -72,7 +72,9 @@ export const ProjectsDisplay = () => {
               className={`${ClassStyles.ProjectContentBox} 
                  flex justify-center mt-5 md:mx-12`}
             >
-              <TabPanelBuild />
+              <AnimatePresence>
+                <TabPanelBuild />
+              </AnimatePresence>
             </div>
           </div>
         </TabsList>
