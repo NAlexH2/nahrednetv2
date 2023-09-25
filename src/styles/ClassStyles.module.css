@@ -54,7 +54,7 @@
   color: black;
 }
 
-.MyBoxContainer {
+.SkillBoxContainer {
   border-style: solid;
   border-top-width: 4px;
   border-bottom-width: 4px;
@@ -63,6 +63,25 @@
   width: 320px;
   scrollbar-width: none;
   border-radius: 2rem;
+}
+
+.ProjectContentBox {
+  border-style: solid;
+  border-top-width: 4px;
+  border-bottom-width: 4px;
+  border-color: var(--oceanslatelight);
+  height: auto;
+  scrollbar-width: none;
+  border-radius: 2rem;
+}
+
+.HorizontalProjectListBox {
+  border-style: solid;
+  border-left-width: 4px;
+  border-right-width: 4px;
+  border-color: var(--oceanslatelight);
+  border-radius: 2rem;
+  scrollbar-width: none;
 }
 
 @media (max-width: 767px) {
