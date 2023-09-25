@@ -6,6 +6,11 @@
   font-family: Josefin;
 }
 
+.CustomList > li::marker {
+  content: "> ";
+  color: var(--honey);
+}
+
 .Headshot {
   border: 3px;
   border-radius: 4%;
@@ -73,6 +78,8 @@
   height: auto;
   scrollbar-width: none;
   border-radius: 2rem;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .HorizontalProjectListBox {
