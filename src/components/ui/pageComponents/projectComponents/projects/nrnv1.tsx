@@ -1,5 +1,5 @@
 import { NRNImage } from "components/ui/imageComponents";
-import HGCode from "/public/images/projectImages/HaskellGoSnippet.png";
+import GreetingV1 from "/public/images/projectImages/nrnGreetingV1.png";
 import Link from "next/link";
 import { IDStyles, ClassStyles } from "styles";
 import AnimateTx from "components/utils/animateTx";
@@ -22,14 +22,14 @@ export const NRNV1 = () => {
           </Link>
         </div>
         <br />
-        <p className="float-left mr-10">
+        <p className="float-left mr-10 mb-2">
           <div
             className="text-2xl underline decoration font-medium
               decoration-[var(--honey)]"
           >
             Tech Stack:
           </div>
-          <ul className={`${ClassStyles.CustomList} float-left`}>
+          <ul className={`${ClassStyles.CustomList}`}>
             <li className="mt-1 ml-5">HTML & CSS</li>
             <li className="mt-1 ml-5">JavaScript</li>
             <li className="mt-1 ml-5">Bootstrap</li>
@@ -43,26 +43,18 @@ export const NRNV1 = () => {
             practices withing web development. This involved recreating pages
             with raw HTML and CSS - no fancy frameworks!
           </p>
-          <div className="flex justify-center">
+          <div className="max-md:flex max-md:justify-center md:float-right">
             <NRNImage
-              src={HGCode}
+              src={GreetingV1}
               className="p-5 max-h-96 w-auto"
-              alt={`Code snippet from the phone bill manager project`}
+              alt={`Snippet of JavaScript code showing 
+              off the greeting message on the bio page`}
             >
               <div className="text-center -mt-4 mb-4 text-xs">
-                An interesting snippet found in GoCapture.hs
+                JavaScript of the greeting seen at the top of the bio page
               </div>
             </NRNImage>
           </div>
-          <h1 className="text-[var(--toastedalmond)]">
-            Major Challenges and Their Solutions
-          </h1>
-          <h3
-            className="text-[var(--toastedalmond)] underline
-        decoration-[var(--honey)] ml-4 mt-1"
-          >
-            Capturing Units - CaptureGo.hs
-          </h3>
         </div>
       </div>
     </AnimateTx>
