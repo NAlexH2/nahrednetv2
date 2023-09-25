@@ -14,8 +14,8 @@ function ButtonBuild() {
         <ul>
           {projectLists.map((project, index) => {
             return (
-              <li key={index} className="flex justify-center">
-                <Tab value={index + 1} className="w-[75%]">
+              <li key={index}>
+                <Tab value={index + 1} className="w-[100%]">
                   <ProjectButton text={project} />
                 </Tab>
               </li>
@@ -38,16 +38,20 @@ function TabPanelBuild() {
 }
 
 export const ProjectsDisplay = () => {
-  const projListLen = projectLists.length;
+  const projListLength = projectLists.length;
   return (
     <>
-      <Tabs defaultValue={1}>
+      <Tabs defaultValue={1} className="mt-3 mx-5">
         <TabsList>
-          <div className="">
-            <div className="flex justify-center">
-              <div className={`w-80`}>
-                <ButtonBuild />
-              </div>
+          <div
+            className="grid max-lg:grid-cols-12 grid-cols-24 lg:grid-cols-29
+          xl:grid-cols-30 2xl:grid-cols-18 min-w-[500px]"
+          >
+            <div className={` max-sm:col-span-4 md:col-span-3 col-span-8`}>
+              <ButtonBuild />
+            </div>
+            <div />
+            <div className="col-span-15">
               <TabPanelBuild />
             </div>
           </div>

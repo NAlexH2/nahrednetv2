@@ -7,10 +7,7 @@ export const Projects = () => {
   return (
     <AnimateTx>
       <div className="container mx-auto">
-        <div
-          className="md:grid md:grid-cols-24 lg:grid-cols-29
-          xl:grid-cols-30 2xl:grid-cols-18"
-        >
+        <div>
           <ProjectsDisplay />
         </div>
       </div>
