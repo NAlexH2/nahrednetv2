@@ -9,9 +9,11 @@ interface ButtonProps {
 export const ProjectButton = (props: ButtonProps) => {
   return (
     <>
-      <div className={`${ClassStyles.ProjectButton_base} m-2 p-2 rounded-lg `}>
+      <div
+        className={`${ClassStyles.ProjectButton_base} ${props.className} m-2 p-0.5 rounded-lg `}
+      >
         <div
-          className={`${ClassStyles.ProjectButton_info} py-2 max-lg:text-sm`}
+          className={`${ClassStyles.ProjectButton_info} py-2 max-md:text-sm`}
         >
           {props.text}
         </div>

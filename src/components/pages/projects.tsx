@@ -6,7 +6,7 @@ import { ClassStyles } from "styles";
 export const Projects = () => {
   return (
     <AnimateTx>
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[1240px] -mt-4">
         <div>
           <ProjectsDisplay />
         </div>

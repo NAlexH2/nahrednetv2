@@ -3,27 +3,44 @@ import { Tabs } from "@mui/base/Tabs";
 import { TabsList } from "@mui/base/TabsList";
 import { TabPanel } from "@mui/base/TabPanel";
 import { Tab } from "@mui/base/Tab";
-import { projectLists } from "./projectList";
+import projectLists from "./projectList";
 import { Box } from "@mui/material";
 import { ClassStyles } from "styles";
 
-function ButtonBuild() {
+function HorizontalButtonBuild() {
   return (
-    <>
-      <Box>
-        <ul>
-          {projectLists.map((project, index) => {
-            return (
-              <li key={index}>
-                <Tab value={index + 1} className="w-[100%]">
-                  <ProjectButton text={project} />
-                </Tab>
-              </li>
-            );
-          })}
-        </ul>
-      </Box>
-    </>
+    <ul
+      className={`${ClassStyles.HorizontalProjectListBox} flex flex-row gap-8 
+        overflow-y-auto w-full`}
+    >
+      <li className="ml-1" />
+      {projectLists.map((project, index) => {
+        return (
+          <Tab key={index} value={index + 1} className="">
+            <li className="w-48">
+              <ProjectButton text={project[0]} className="" />
+            </li>
+          </Tab>
+        );
+      })}
+      <li className="mr-1" />
+    </ul>
+  );
+}
+
+function GridButtonBuild() {
+  return (
+    <div className="flex flex-wrap justify-center">
+      {projectLists.map((project, index) => (
+        <Tab
+          key={index}
+          value={index + 1}
+          className="md:w-[30%] lg:max-w-[360px] xl:max-w-[220px]"
+        >
+          <ProjectButton text={project[0]} />
+        </Tab>
+      ))}
+    </div>
   );
 }
 
@@ -31,7 +48,7 @@ function TabPanelBuild() {
   return projectLists.map((project, index) => {
     return (
       <TabPanel key={index} value={index + 1}>
-        {project}
+        {project[1]}
       </TabPanel>
     );
   });
@@ -43,15 +60,18 @@ export const ProjectsDisplay = () => {
     <>
       <Tabs defaultValue={1} className="mt-3 mx-5">
         <TabsList>
-          <div
-            className="grid max-lg:grid-cols-12 grid-cols-24 lg:grid-cols-29
-          xl:grid-cols-30 2xl:grid-cols-18 min-w-[500px]"
-          >
-            <div className={` max-sm:col-span-4 md:col-span-3 col-span-8`}>
-              <ButtonBuild />
+          <div className="lg:min-w-[500px]">
+            <div className="sm:md:hidden">
+              <HorizontalButtonBuild />
             </div>
-            <div />
-            <div className="col-span-15">
+            <div className="max-md:hidden">
+              <GridButtonBuild />
+            </div>
+
+            <div
+              className={`${ClassStyles.ProjectContentBox} 
+                 flex justify-center mt-5 md:mx-12`}
+            >
               <TabPanelBuild />
             </div>
           </div>
