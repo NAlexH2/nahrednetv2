@@ -46,19 +46,19 @@
   color: var(--honey);
 }
 
-.ProjectButton_base {
+.Button_base {
   background: var(--honey);
   border: solid var(--honey) 0.125rem;
 }
 
-.ProjectButton_base:hover,
-.ProjectButton_base:hover .ProjectButton_info {
+.Button_base:hover,
+.Button_base:hover .Button_info {
   border: solid var(--toastedalmond) 2px;
   background: black;
   color: white;
 }
 
-.ProjectButton_info {
+.Button_info {
   pointer-events: auto;
   border: solid black 2px;
   border-radius: 0.5rem;
