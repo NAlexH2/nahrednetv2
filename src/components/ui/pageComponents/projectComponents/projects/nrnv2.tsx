@@ -43,7 +43,7 @@ export const NRNV2 = () => {
             <li className="mt-1 ml-5">Material UI</li>
             <li className="mt-1 ml-5">Tailwind CSS</li>
             <li className="mt-1 ml-5">Framer Motion</li>
-            <li className="mt-1 ml-5">react-code-snippets</li>
+            <li className="mt-1 ml-5">react-code-blocks</li>
           </ul>
         </p>
         <div className="text-justify">
@@ -56,7 +56,7 @@ export const NRNV2 = () => {
               <Code
                 // @ts-ignore
                 language="TypeScript"
-                text="react-code-snippets"
+                text="react-code-blocks"
                 theme={dracula}
               />
             }{" "}
