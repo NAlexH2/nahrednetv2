@@ -231,7 +231,8 @@ export const NRNV2 = () => {
             Using a modified build script, the website is built and deployed
             from AWS Amplify. AWS Amplify can automatically rebuild a website if
             it detects any changes to the source, much like GitHub actions can
-            too.
+            too. I also used GitHub pages and GitHub actions to do test
+            deployments just to ensure it looked fine periodically.
           </p>
           <h3
             className="text-[var(--toastedalmond)] underline 
