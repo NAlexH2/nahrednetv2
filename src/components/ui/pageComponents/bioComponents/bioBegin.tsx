@@ -17,9 +17,7 @@ export const BioBegin = () => {
           Portland State University
         </a>
       </Link>
-      {"."}
-      <br />
-      <br />I have completed my Undergrad program at the{" "}
+      . I have completed my Undergrad program at the{" "}
       <Link href="https://www.pdx.edu/engineering/" legacyBehavior>
         <a id={IDStyles.UniLink} target="_blank" rel="noopener noreferrer">
           Maseeh College of Engineering and Computer Science
@@ -27,12 +25,7 @@ export const BioBegin = () => {
       </Link>{" "}
       and obtained a Bachelors of Science in Computer Science, and completing a
       minor in Mathematics.
-      <div className="max-lg:hidden">
-        {" "}
-        <br />
-        <br />
-        {<FriendsDescribe />}
-      </div>
+      <div className="max-lg:hidden mt-4"> {<FriendsDescribe />}</div>
     </div>
   );
 };
