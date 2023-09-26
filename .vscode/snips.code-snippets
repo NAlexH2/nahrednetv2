@@ -13,5 +13,15 @@
     "prefix": "excnst",
     "body": "export const ${1} = () => {\n\treturn (\n\t ${2}\n  );\n};",
     "description": "Create New Arrow Function"
+  },
+  "Plain Text Quote": {
+    "prefix": "qt",
+    "body": "&#34;${1}&#34;",
+    "description": "Drop in two &#34; and add text between"
+  },
+  "Plain Text Appostrophe": {
+    "prefix": "apos",
+    "body": "&#39;",
+    "description": "Add a quick appostrophe"
   }
 }
