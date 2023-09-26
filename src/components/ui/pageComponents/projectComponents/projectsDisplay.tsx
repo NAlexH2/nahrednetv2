@@ -55,7 +55,6 @@ function TabPanelBuild() {
 }
 
 export const ProjectsDisplay = () => {
-  const projListLength = projectLists.length;
   return (
     <>
       <Tabs defaultValue={1} className="mt-3 mx-5">
