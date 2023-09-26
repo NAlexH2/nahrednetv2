@@ -48,7 +48,7 @@ jobs:
       - name: Install dependencies using Bun runtime
         run: bun i
       - name: Build with Next.js using Bun runtime
-        run: bun run deploy
+        run: bun run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
