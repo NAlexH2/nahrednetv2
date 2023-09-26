@@ -6,9 +6,16 @@
   font-family: Josefin;
 }
 
-.CustomList > li::marker {
+.CustomList > li {
+  position: relative;
+  margin-left: 20px;
+}
+
+.CustomList > li::before {
   content: "> ";
   color: var(--honey);
+  position: absolute;
+  left: -20px;
 }
 
 .Headshot {
