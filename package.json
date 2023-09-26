@@ -2,7 +2,7 @@
   "name": "nahrednetv2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://main.dlo35ck9dhgy9.amplifyapp.com/",
+  "homepage": "https://main.dlo35ck9dhgy9.amplifyapp.com/#/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
