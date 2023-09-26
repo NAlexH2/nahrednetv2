@@ -189,6 +189,7 @@ export const NRNV2 = () => {
               language="TypeScript"
               text="text-[var(--toastedalmond)] underline decoration-[var(--honey)]"
               theme={dracula}
+              wrapLongLines
             />
           </div>
           <p className="mt-1">
