@@ -3,8 +3,8 @@ import { Button, Box } from "@mui/material";
 
 interface MButtonProps {
   className?: string;
-  id?: string | undefined;
-  text?: String;
+  id?: string;
+  text?: string;
   onClick?: MouseEventHandler;
   children?: React.ReactNode;
 }
