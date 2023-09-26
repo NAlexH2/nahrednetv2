@@ -17,10 +17,8 @@ on:
       branch:
         description: "The branch to build"
         required: true
-        default: "dev-NextJS"
+        default: "main"
         type: choice
-        options:
-          - dev-NextJS
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
