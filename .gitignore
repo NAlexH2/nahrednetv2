@@ -34,4 +34,4 @@ yarn-error.log*
 *.tsbuildinfo
 
 # misc
-.github/*
+deploy.yml
