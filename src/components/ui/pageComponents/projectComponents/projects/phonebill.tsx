@@ -4,13 +4,14 @@ import Link from "next/link";
 import { ClassStyles, IDStyles } from "styles";
 import { NRNImage } from "components/ui/imageComponents";
 
+const projURL = "https://github.com/NAlexH2/phonebill-android-project";
 export const PhoneBill = () => {
   return (
     <AnimateTx>
       <div className="my-8 mx-5">
         <div className="text-center">
           <Link
-            href="https://github.com/NAlexH2/phonebill-android-project"
+            href={projURL}
             passHref={true}
             target="_blank"
             rel="noopener noreferrer"
