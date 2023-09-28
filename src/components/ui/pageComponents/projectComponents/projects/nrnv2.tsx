@@ -5,13 +5,14 @@ import Link from "next/link";
 import { Code, dracula } from "react-code-blocks";
 import { IDStyles, ClassStyles } from "styles";
 
+const projURL = "https://github.com/NAlexH2/nahrednetv2";
 export const NRNV2 = () => {
   return (
     <AnimateTx>
       <div className="my-8 mx-5">
         <div className="text-center">
           <Link
-            href="https://github.com/NAlexH2/nahrednet/tree/NextJS-Complete"
+            href={projURL}
             passHref={true}
             target="_blank"
             rel="noopener noreferrer"
