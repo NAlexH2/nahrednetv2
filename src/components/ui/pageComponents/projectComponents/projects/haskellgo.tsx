@@ -8,13 +8,14 @@ import AnimateTx from "components/utils/animateTx";
 const separateUnits = "[[0,1,3],[2,3],[3,5,6],[4,7],[5,8]]";
 const unionedUnits = "[[0,1,2,3,5,6,8],[4,7]]";
 
+const projURL = "https://github.com/NAlexH2/HaskellGo";
 export const HaskellGo = () => {
   return (
     <AnimateTx>
       <div className="my-8 mx-5">
         <div className="text-center">
           <Link
-            href="https://github.com/NAlexH2/HaskellGo"
+            href={projURL}
             passHref={true}
             target="_blank"
             rel="noopener noreferrer"

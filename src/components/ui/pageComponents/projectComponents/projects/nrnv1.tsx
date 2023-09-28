@@ -4,13 +4,14 @@ import Link from "next/link";
 import { IDStyles, ClassStyles } from "styles";
 import AnimateTx from "components/utils/animateTx";
 
+const projURL = "https://github.com/NAlexH2/nahrednetv1";
 export const NRNV1 = () => {
   return (
     <AnimateTx>
       <div className="my-8 mx-5">
         <div className="text-center">
           <Link
-            href="https://github.com/NAlexH2/nahrednet/tree/HTML-Complete"
+            href={projURL}
             passHref={true}
             target="_blank"
             rel="noopener noreferrer"
