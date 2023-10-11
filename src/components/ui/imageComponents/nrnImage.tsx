@@ -18,6 +18,7 @@ export const NRNImage = (prop: nrnImageProps) => {
         style={{ color: "inherit" }}
         src={prop.src}
         alt={prop.alt}
+        priority={true}
       />
       {prop.children}
     </div>
