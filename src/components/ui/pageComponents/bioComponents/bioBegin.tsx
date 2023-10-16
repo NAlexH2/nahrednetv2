@@ -9,9 +9,9 @@ export const BioBegin = () => {
       <Greeting />
       My name is{" "}
       <i>
-        <b>Alex Harris</b>
+        <b>Nicholas Alexander Harris,</b>
       </i>{" "}
-      and I am a Graduate student at{" "}
+      but prefer to go by my middle name, Alex. I am a Graduate student at{" "}
       <Link href="https://www.pdx.edu/" legacyBehavior>
         <a id={IDStyles.UniLink} target="_blank" rel="noopener noreferrer">
           Portland State University
