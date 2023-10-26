@@ -14,6 +14,7 @@ export const Contact = () => {
                 placeholder="Full Name"
                 type="text"
                 name="name"
+                required
               />
             </div>
             <div className="mx-2 mt-5">
@@ -22,6 +23,7 @@ export const Contact = () => {
                 placeholder="Email Address"
                 type="email"
                 name="email"
+                required
               />
             </div>
           </div>
@@ -32,6 +34,7 @@ export const Contact = () => {
               rows={10}
               name="message"
               placeholder="What would you like to say?"
+              required
             />
           </div>
         </div>
