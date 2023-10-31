@@ -1,3 +1,5 @@
+# Website: [nah-red.net](https://github.com/NAlexH2/nahrednetv2)
+
 # Tech Stack Used:
 - npm (deprecated near the end of this project)
 - [Bun](https://bun.sh/) (replaced npm for this project)
