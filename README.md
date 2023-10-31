@@ -26,10 +26,8 @@ In my pursuit for deciding what framework I wanted to go with, I had in fact set
 
 I quickly found myself stuck in a corner with React though! I could not find a clean and easy way to do some things - such as adding custom fonts - in a nice manner. NextJS however, made it super easy to do that! Then, I was running into issues where certain packages I was trying to use were, strangely enough, having issues being compatible. I had thought to myself how strange that was and that it should not matter.
 
-```
-Snippet of TypeScript code showing demonstrating a ternary picking a CSS style
-A cool snippet from V2 that has a ternary select the CSS style
-```
+![nrnV2TernaryStyle](https://www.nah-red.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FnrnV2TernaryStyle.7faf9d90.png&w=640&q=75)
+
 
 Issue after issue kept coming up, and I found myself disappointed that I was not able to resolve the issues I was getting into. I did a bit more research, more reading, and found that NextJS supports TypeScript! And that the router and CSR vs SSR actually was not going to be a problem for my little site since I had nothing that requested information from a database.
 
@@ -37,7 +35,7 @@ Issue after issue kept coming up, and I found myself disappointed that I was not
 # What is Bun?
 [Bun](https://bun.sh/) is a JavaScript runtime that is compatible with npm, and was something I had actually discovered towards the end of the project. I had only found it because of some searches I was doing on YouTube recommended the [Bun 1.0 launch video](https://www.youtube.com/watch?v=BsnCpESUEqM) which convinced me to give it a shot. I moved my dev environment over to Windows Subsystem for Linux, installed Bun, and the experience was a night and day difference.
 
-Everything promised in the Bun launch video was true! My package install times (when starting completely fresh - no node_modules folder) went from ~30 seconds, to less than 3. Downloading packages were significantly faster too. `bun run dev nearly instantly launches the NextJS dev environment, which was a significant difference from what I had experienced before.
+Everything promised in the Bun launch video was true! My package install times (when starting completely fresh - no `node_modules` folder) went from ~30 seconds, to less than 3. Downloading packages were significantly faster too. `bun run dev` nearly instantly launches the NextJS dev environment, which was a significant difference from what I had experienced before.
 
 # On Tailwind CSS
 Now I am quite new to web development, but Tailwind CSS is a dream framework. It made 99% of the work I had to do with CSS incredibly simple. From adding my own extended grid options to use with it, to being able to do something like `max-h-[280px]` where I am setting my own pixel width instead of being constrained to their built in options was amazing! This extends to almost any CSS property too. Here is another pretty cool example:
