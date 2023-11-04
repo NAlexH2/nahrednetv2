@@ -1,4 +1,4 @@
-# Website: [nah-red.net](https://github.com/NAlexH2/nahrednetv2)
+# Website: [nah-red.net](https://www.nah-red.net/)
 
 # Tech Stack Used:
 - npm (deprecated near the end of this project)
