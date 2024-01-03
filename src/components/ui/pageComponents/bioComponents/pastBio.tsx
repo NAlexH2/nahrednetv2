@@ -35,6 +35,27 @@ export const PastBio = () => {
       and Advanced Programming with Java. I finished off the term with an
       Advanced Programming with Java. I finished off the term with an
       &#39;A&#39; letter grade for each class.
+      <br />
+      <br />
+      Finally, in the spring of 2023, I received my Bachelors of Science in
+      Computer Science with a Minor in Mathematics. After a long journey, I was
+      finally at a destination I was incredibly proud of. Ever since I left for
+      the Navy, I had one concrete goal in mind: to come back to Portland State
+      University and receive my degree, and be proud of the work I did along the
+      way. It was something I had said for what felt like every month to someone
+      - if not at least once a week - while I was in the military that this was
+      my absolute dream.
+      <br />
+      <br />
+      However, due to a variety of circumstances and the state of the economy,
+      during the summer of 2023 I was simply student worker as a Graduate
+      student at Portland State University where I am furthering my knowledge
+      and began working towards my Masters in Computer Science starting Fall
+      term, September 2023. My plan is to take a variety of courses that explore
+      both Software Engineering even deeper as well as Artificial Intelligence.
+      During this summer break I was focused on self-teaching and exploring
+      React through various supporting frameworks such as NextJS (which this
+      site was built with!) and React Native over my summer break.
     </p>
   );
 };
