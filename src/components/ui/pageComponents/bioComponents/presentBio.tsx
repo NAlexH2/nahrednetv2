@@ -1,17 +1,24 @@
-import { arch } from "os";
-
 export const PresentBio = () => {
   return (
     <div className="text-justify xl:ml-3">
       <p>
-        As of the Summer of 2023 - and due to a variety of circumstances - I am
-        simply student worker as a Graduate student at Portland State University
-        where I am furthering my knowledge and begin working towards my Masters
-        in Computer Science starting Fall term, 2023 and finishing by Summer
-        2024. My plan is to take a large variety of courses that explore both
-        Software Engineering and Artificial Intelligence. I currently am focused
-        on self-teaching and exploring React through various supporting
-        frameworks such as NextJS and React Native over my summer break.
+        As of January 2024, I am continuing to work on my Masters degree in
+        Computer Science. My first term in the program started in September
+        2023, where I started off strong, worked hard, and am going into my
+        second term with a 4.0 GPA.
+        <br />
+        <br />
+        In my first term, I learned about critical planning and design patterns
+        when it comes to projects of a variety of scale. I had already had some
+        instructional insight on this from my Undergraduate degree, but this
+        different version went into depth about understanding many facets of
+        software development I had not previously been taught.
+        <br />
+        <br />
+        Additionally, I took a class called &#34;Internet, Web & Cloud
+        Systems&#34; where I learned all about what goes into make a cloud based
+        application. My final project for this class was to do just that as
+        well! You can learn more about it by visiting my projects page.
       </p>
     </div>
   );
