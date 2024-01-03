@@ -19,8 +19,8 @@ import AnimateTx from "components/utils/animateTx";
 const skillsGroupsList: [string, string[]][] = [
   ["Languages", knownLangs],
   ["Tools", knownTools],
-  ["Soft Skills", softSkills],
   ["Technical Skills", technicalSkills],
+  ["Soft Skills", softSkills],
   ["Completed Courses", completedCourses],
 ];
 
