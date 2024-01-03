@@ -1,6 +1,12 @@
 import { ReactNode } from "react";
-import { NRNV2, NRNV1, Safe, PhoneBill, HaskellGo } from "./projects";
-import CloudProject from "./projects/cloudproject";
+import {
+  NRNV2,
+  NRNV1,
+  Safe,
+  PhoneBill,
+  HaskellGo,
+  CloudProject,
+} from "./projects";
 
 const projectLists: [string, ReactNode][] = [
   ["Video Game Search", <CloudProject key="0" />],
