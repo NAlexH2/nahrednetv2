@@ -21,13 +21,36 @@ export const knownTools = [
   "Visual Studio",
   "IntelliJ",
   "Android Studio",
-  "AWS",
+  "Amazon Web Service",
+  "Google Cloud Platform",
   "GitHub/GitLab",
-  "NextJS",
-  "NodeJS",
+  "Docker",
+  "Flask",
+  "Jinja2",
+  "Next.JS",
+  "Node.JS",
   "React",
-  "ExpressJS",
-  "Bun JS Runtime",
+  "Express.JS",
+  "Bun Runtime",
+];
+
+export const technicalSkills = [
+  "Programming Languages",
+  "REST API",
+  "DevOps",
+  "Web Development",
+  "Database Management",
+  "Software Testing",
+  "Version Control",
+  "Algorithms and Data Structures",
+  "Operating Systems",
+  "Cloud Computing",
+  "Mobile App Development",
+  "UI/UX Design",
+  "Software Architecture",
+  "Agile and Scrum Methodologies",
+  "Compiler Design",
+  "Embedded Systems",
 ];
 
 export const softSkills = [
@@ -50,26 +73,8 @@ export const softSkills = [
   "Leadership",
 ];
 
-export const technicalSkills = [
-  "Programming Languages",
-  "REST API",
-  "DevOps",
-  "Web Development",
-  "Database Management",
-  "Software Testing",
-  "Version Control",
-  "Algorithms and Data Structures",
-  "Operating Systems",
-  "Cloud Computing",
-  "Mobile App Development",
-  "UI/UX Design",
-  "Software Architecture",
-  "Agile and Scrum Methodologies",
-  "Compiler Design",
-  "Embedded Systems",
-];
-
 export const completedCourses = [
+  "Internet, Web & Cloud Systems",
   "Software Engineering",
   "Algorithms & Complexity",
   "Computer Systems Programming",
