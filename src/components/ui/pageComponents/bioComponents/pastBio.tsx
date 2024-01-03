@@ -51,11 +51,11 @@ export const PastBio = () => {
       during the summer of 2023 I was simply student worker as a Graduate
       student at Portland State University where I am furthering my knowledge
       and began working towards my Masters in Computer Science starting Fall
-      term, September 2023. My plan is to take a large variety of courses that
-      explore both Software Engineering and Artificial Intelligence. I currently
-      am focused on self-teaching and exploring React through various supporting
-      frameworks such as NextJS and React Native over my summer break (which
-      this site was built with!)
+      term, September 2023. My plan is to take a variety of courses that explore
+      both Software Engineering even deeper as well as Artificial Intelligence.
+      During this summer break I was focused on self-teaching and exploring
+      React through various supporting frameworks such as NextJS (which this
+      site was built with!) and React Native over my summer break.
     </p>
   );
 };
