@@ -11,7 +11,7 @@ export const PageFooter = () => {
       </span>
       <span className="flex justify-center">
         <div className="text-center text-md my-3">
-          &#169; 2024 Nicholas Alexander Harris
+          &#169; 2025 Nicholas Alexander Harris
         </div>
       </span>
     </div>
