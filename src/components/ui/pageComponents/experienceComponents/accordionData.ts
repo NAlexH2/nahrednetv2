@@ -8,8 +8,40 @@ export interface AccordionItem {
 const accordionData: AccordionItem[] = [
   {
     id: 0,
-    title: "Portland State University - Technical Course Support Specialist",
-    dates: "April 2021 - Present",
+    title: "CDK Global - Software Engineering Intern",
+    dates: "June 2024 – October 2024",
+    content: `
+    <div class="px-6 mt-7">
+      Developed and enhanced software solutions within the automotive industry, 
+      focusing on creating scalable, efficient, and user-friendly applications 
+      to meet client needs and industry standards.
+    </div>
+    <div class="px-6 mt-5">
+        Collaborated with cross-functional teams to identify and resolve 
+        performance bottlenecks, ensuring smooth deployment and optimal 
+        functionality of enterprise-level systems.
+    </div>
+    <div class="px-6 mt-5">
+        Gained experience in debugging, code optimization, and implementing 
+        new features while adhering to strict project deadlines and maintaining 
+        high-quality standards.
+    </div>
+    <div class="px-6 mt-5">
+        Participated in team meetings and code reviews to exchange knowledge, 
+        refine best practices, and contribute to the overall improvement of 
+        development workflows.
+    </div>
+    <div class="px-6 mt-5">
+        Leveraged my technical expertise and problem-solving skills to deliver 
+        impactful contributions in a fast-paced, results-driven environment.
+    </div>
+    `
+  },
+  {
+    
+    id: 1,
+    title: "Portland State University - Teacher's Assistant",
+    dates: "April 2021 - December 2024",
     content: `
     <div class="px-6 mt-7">
       Facilitated introductory programming labs into the field of Computer 
@@ -35,7 +67,7 @@ const accordionData: AccordionItem[] = [
     `,
   },
   {
-    id: 1,
+    id: 2,
     title: "United States Navy - Electronics Technician, 2nd Class (E-5)",
     dates: "February 2012 - February 2020",
     content: `
